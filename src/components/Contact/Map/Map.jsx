@@ -13,7 +13,6 @@ function MapC() {
 const Map = ({ latitude, longitude }) =>
   // :
   // {
-
   //   latitude: number;
   //   longitude: number;
   // }
