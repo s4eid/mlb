@@ -1,0 +1,121 @@
+.holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+  /* height: 500px; */
+}
+.infoContainer {
+  z-index: 2;
+  width: 500px;
+  /* width: 50%; */
+  gap: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.infoContainer h1 {
+  word-spacing: 5px;
+}
+.infoContainer h2 {
+  color: #393a3c;
+}
+.heroContainer {
+  position: relative;
+  /* width: 50%; */
+  z-index: 2;
+  width: 600px;
+  height: 450px;
+}
+.heroContainer img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.infoBtnContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.infoBtnContainer button {
+  font-weight: bold;
+}
+.infoBtn {
+  background-color: #393a3c;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  color: #ffff0a;
+  font-weight: bold;
+  font-size: 16px;
+  height: 40px;
+}
+.callBtn {
+  background-color: #393a3c;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  color: #3daaec;
+  font-weight: bold;
+  font-size: 16px;
+  height: 40px;
+}
+@media screen and (max-width: 1300px) {
+  .holder {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .heroContainer {
+    width: 500px;
+    height: 350px;
+  }
+  .infoContainer h1 {
+    font-size: 27px;
+  }
+  .infoContainer h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .infoContainer {
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .infoContainer h1 {
+    font-size: 25px;
+  }
+  .infoContainer h2 {
+    font-size: 18px;
+  }
+  .heroContainer {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .heroContainer {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .heroContainer {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+/* .holder::after {
+  content: "";
+  position: absolute;
+  width: 862px;
+  height: 820px;
+  border-radius: 50%;
+  right: -150px;
+  top: -150px;
+  background: #3fabe1;
+  z-index: 1;
+} */

@@ -1,0 +1,39 @@
+{
+  "name": "mlb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@mui/lab": "^5.0.0-alpha.119",
+    "@mui/material": "^5.11.8",
+    "@next/font": "^13.1.6",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.10",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "formik": "^2.2.9",
+    "google-map-react": "^2.2.0",
+    "next": "13.1.6",
+    "next-image-zoom": "^1.1.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-scroll": "^1.8.9",
+    "typescript": "4.9.5",
+    "yup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/google-map-react": "^2.1.7",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "@types/react-scroll": "^1.8.6"
+  }
+}

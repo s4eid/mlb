@@ -1,0 +1,76 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  position: relative;
+}
+.titleH {
+  color: #393a3c;
+  margin-bottom: 40px;
+}
+.teBgContainer {
+  display: none;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.galleryContainer {
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  background-image: url("/teBg_1.svg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+  border-radius: 10px;
+  width: 100%;
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  position: relative;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.gallery img {
+  border-radius: 10px;
+}
+.teBackground {
+  z-index: -1;
+}
+@media screen and (max-width: 1605px) {
+  .galleryContainer {
+    background-position: bottom;
+  }
+  /* .teBackground {
+    display: none;
+  } */
+}
+@media screen and (max-width: 1300px) {
+  .titleH h1 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 735px) {
+  .galleryContainer {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 658px) {
+  .gallery {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .titleH h1 {
+    font-size: 25px;
+  }
+}

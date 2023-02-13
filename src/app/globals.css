@@ -1,0 +1,37 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Source Code Pro", monospace; */
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  /* font-family: "ABeeZee", sans-serif; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  /* font-family: "ABeeZee", sans-serif; */
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  cursor: pointer;
+  /* font-family: "Source Code Pro", monospace; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* color-scheme: dark; */
+}
+body {
+  color: black;
+}
+/* colors : 
+blue=#3DAAEC
+ye=#FFFF0A
+back=#393A3C
+ */

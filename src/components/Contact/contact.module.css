@@ -1,0 +1,68 @@
+.mainContainer {
+  display: flex;
+  background-image: url("/contactBg.svg");
+  background-size: cover;
+  background-position: bottom;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 100px;
+}
+.titleC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #393a3c;
+  margin-bottom: 20px;
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.contactC {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+.contactCImage {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.contactBgC {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  /* position: absolute; */
+  z-index: -1;
+}
+@media screen and (max-width: 1300px) {
+  .contactC {
+    flex-direction: column;
+  }
+  .titleC h1 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .titleC h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .contactCImage {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contactCImage {
+    width: 300px;
+    height: 300px;
+  }
+}
