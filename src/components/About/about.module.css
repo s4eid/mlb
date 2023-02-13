@@ -90,6 +90,9 @@
   .infoHolder h1 {
     font-size: 25px;
   }
+  .mainContainer {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 365px) {

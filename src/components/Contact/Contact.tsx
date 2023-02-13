@@ -19,6 +19,7 @@ function Contact() {
         <Image alt="whatsapp" src={"/whatsapp.png"} width={40} height={40} />
       </div>
       <div className={contact.contactC}>
+        <ContactF />
         <div className={contact.contactCImage}>
           <Map />
           {/* <MapWrapped
@@ -29,7 +30,6 @@ function Contact() {
           /> */}
           {/* <Image src="/contact.jpg" alt="contact-image" fill /> */}
         </div>
-        <ContactF />
       </div>
       {/* <div className={contact.contactBgC}> */}
       {/* <Image
