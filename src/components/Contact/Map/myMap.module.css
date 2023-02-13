@@ -1,0 +1,17 @@
+.holder {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+@media screen and (max-width: 620px) {
+  .holder {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .holder {
+    width: 300px;
+    height: 300px;
+  }
+}

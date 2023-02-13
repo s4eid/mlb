@@ -1,43 +1,32 @@
 "use client";
-import { Wrapper } from "@googlemaps/react-wrapper";
-import React from "react";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import MyMapComponent from "./MyMapComponent";
+const render = (status) => {
+  switch (status) {
+    case Status.LOADING:
+      return <p>Loading...</p>;
+    case Status.FAILURE:
+      return <p>Error</p>;
+    case Status.SUCCESS:
+      return <MyMapComponent />;
+  }
+};
 
-function MapC() {
+function MyMap() {
   return (
-    <Wrapper apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP}>
-      <Map latitude={38.64403004130668} longitude={34.83221456271912} />
+    // <div style={{ position: "relative", width: "500px", height: "500px" }}>
+    <Wrapper render={render} apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP}>
+      <MyMapComponent
+        center={{
+          // latitude: 38.71124148614522,
+          // longitude: 34.834870182649674,
+          lat: 38.71124148614522,
+          lng: 34.834870182649674,
+        }}
+        zoom={11}
+      />
     </Wrapper>
+    // </div>
   );
 }
-
-const Map = ({ latitude, longitude }) =>
-  // :
-  // {
-
-  //   latitude: number;
-  //   longitude: number;
-  // }
-  {
-    const ref = React.useRef(null);
-    const [map, setMap] = (React.useState < google.maps.Map) | (null > null);
-
-    React.useEffect(() => {
-      if (ref.current && !map) {
-        setMap(
-          new google.maps.Map(ref.current, {
-            zoomControl: true,
-            mapTypeControl: false,
-            streetViewControl: false,
-            center: {
-              lat: latitude ?? 0,
-              lng: longitude ?? 0,
-            },
-            zoom: 11,
-          })
-        );
-      }
-    }, [ref, map, latitude, longitude]);
-
-    return <div ref={ref} style={{ height: "100%", width: "100%" }} />;
-  };
-export default MapC;
+export default MyMap;

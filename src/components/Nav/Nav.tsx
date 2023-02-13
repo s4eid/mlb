@@ -16,7 +16,16 @@ function Nav() {
   return (
     <div className={nav.mainContainer}>
       <div className={nav.logoHolder}>
-        <Image src={"/logo.jpeg"} alt="logo" fill />
+        <Link
+          to="home"
+          href="#"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          <Image src={"/logo.jpeg"} alt="logo" fill />
+        </Link>
       </div>
       <div className={nav.navigation}>
         <ul className={nav.navigationHolder}>
