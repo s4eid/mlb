@@ -4,7 +4,7 @@ import React from "react";
 
 function MapC() {
   return (
-    <Wrapper apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP}>
+    <Wrapper apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP!}>
       <Map latitude={38.64403004130668} longitude={34.83221456271912} />
     </Wrapper>
   );
