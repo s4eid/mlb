@@ -16,7 +16,7 @@ function Clietns() {
                 <Image src={"/team_3.jpg"} alt="team_1" fill />
               </div>
               <div className={team.details}>
-                <h2>Saeid noormohammad</h2>
+                <h3>Saeid noormohammad</h3>
                 <p>Ceo</p>
                 <Image
                   src={"/linkedin.png"}
@@ -30,7 +30,7 @@ function Clietns() {
           <div className={team.team2}>
             <div className={team.personHolder}>
               <div className={team.details}>
-                <h2>Saeid noormohammad</h2>
+                <h3>Saeid noormohammad</h3>
                 <p>Ceo</p>
                 <Image
                   src={"/linkedin.png"}
@@ -50,7 +50,7 @@ function Clietns() {
                 <Image src={"/team_1.jpg"} alt="team_1" fill />
               </div>
               <div className={team.details}>
-                <h2>Saeid noormohammad</h2>
+                <h3>Saeid noormohammad</h3>
                 <p>Ceo</p>
                 <Image
                   src={"/linkedin.png"}

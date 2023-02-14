@@ -22,6 +22,9 @@
   align-items: center;
   gap: 10px;
 }
+.socials img {
+  cursor: pointer;
+}
 .contactC {
   display: flex;
   justify-content: space-around;

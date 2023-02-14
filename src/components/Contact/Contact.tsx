@@ -6,6 +6,7 @@ import ContactF from "./ContactF/ContactF";
 import Map from "./Map/Map";
 
 function Contact() {
+  console.log(process.env.NEXT_PUBLIC_SEC);
   // const MapWrapped = withScriptjs(withGoogleMap(Map));
   return (
     <div id="contact" className={contact.mainContainer}>
@@ -14,9 +15,20 @@ function Contact() {
       </div>
 
       <div className={contact.socials}>
-        <Image alt="linkedin" src={"/linkedin.png"} width={40} height={40} />
-        <Image alt="instagram" src={"/instagram.png"} width={40} height={40} />
-        <Image alt="whatsapp" src={"/whatsapp.png"} width={40} height={40} />
+        <a>
+          <Image alt="linkedin" src={"/linkedin.png"} width={40} height={40} />
+        </a>
+        <a href="https://www.instagram.com/mlb__flooring/">
+          <Image
+            alt="instagram"
+            src={"/instagram.png"}
+            width={40}
+            height={40}
+          />
+        </a>
+        <a>
+          <Image alt="whatsapp" src={"/whatsapp.png"} width={40} height={40} />
+        </a>
       </div>
       <div className={contact.contactC}>
         <ContactF />

@@ -5,7 +5,7 @@ import { Formik, Field, Form } from "formik";
 import ReCAPTCHA from "react-google-recaptcha";
 import LoadingButton from "@mui/lab/LoadingButton";
 import TextField from "@mui/material/TextField";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import {
   initialValues,
   contactSchema,
@@ -25,8 +25,16 @@ function ContactF() {
           initialValues={initialValues}
           validationSchema={contactSchema}
           onSubmit={async (data) => {
-            const token = await reRef.current.executeAsync();
-            reRef.current.reset();
+            console.log(data);
+            // await fetch("/api/email", {
+            //   method: "POST",
+            //   headers: {
+            //     "Content-Type": "application/json",
+            //   },
+            //   body: JSON.stringify(data),
+            // });
+            // const token = await reRef.current.executeAsync();
+            // reRef.current.reset();
           }}
         >
           {({ errors, touched, isValid, dirty }) => (

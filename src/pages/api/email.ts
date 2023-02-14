@@ -1,0 +1,43 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { NextApiRequest, NextApiResponse } from "next";
+import client from "../../../config/sendgrid/sendgrid";
+type Data = {
+  status: string;
+};
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  if (req.method === "POST") {
+    const memberStr = JSON.stringify(req.body);
+
+    // "frkaksan@gmail.com",
+    const message = {
+      to: [
+        "saeid.savage@gmail.com",
+        "saeid@step-agent.com",
+        // "frkaksan@gmail.com",
+      ],
+      from: {
+        email: "saeid.noormohammad@gmail.com",
+        name: "saeid noormohammad",
+      },
+      subject: "Client submited your form in MLB",
+      html: `
+      <h3>
+   Information:
+      </h3>
+      <br>
+     <p>${memberStr}</p>
+      <br>
+      `,
+    };
+    console.log(req.body);
+    // <h4>Zoomda Gorusme Zamani</h4>
+    // <p>${time}</p>
+    // await client.send(message);
+    res.status(200).json({ status: "done" });
+    return;
+  }
+}
