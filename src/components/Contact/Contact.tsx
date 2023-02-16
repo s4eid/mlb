@@ -6,7 +6,6 @@ import ContactF from "./ContactF/ContactF";
 import Map from "./Map/Map";
 
 function Contact() {
-  console.log(process.env.NEXT_PUBLIC_SEC);
   // const MapWrapped = withScriptjs(withGoogleMap(Map));
   return (
     <div id="contact" className={contact.mainContainer}>
