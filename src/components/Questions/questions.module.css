@@ -21,8 +21,18 @@
   align-items: center;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1300px) {
+  .titleC h1 {
+    font-size: 27px;
+  }
+}
 @media screen and (max-width: 700px) {
   .mainC {
     width: 95%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .titleC h1 {
+    font-size: 25px;
   }
 }
