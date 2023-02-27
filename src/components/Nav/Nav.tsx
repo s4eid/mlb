@@ -6,6 +6,7 @@ import { useState } from "react";
 import SideBar from "./Sidebar/Sidebar";
 import { navSItems } from "data/nav";
 import * as Scroll from "react-scroll";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState<boolean>(false);
@@ -91,7 +92,14 @@ function Nav() {
           </li>
         </ul>
         <div className={nav.burger}>
-          <Image
+          <MenuIcon
+            color="secondary"
+            fontSize="large"
+            onClick={() => {
+              setNavOpen(!navOpen);
+            }}
+          />
+          {/* <Image
             onClick={() => {
               setNavOpen(!navOpen);
             }}
@@ -99,7 +107,7 @@ function Nav() {
             width={35}
             height={35}
             alt="burger"
-          />
+          /> */}
         </div>
         <SideBar setOpen={setNavOpen} navItems={navSItems} isOpen={navOpen} />
       </div>

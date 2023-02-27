@@ -9,18 +9,18 @@
   ); */
   z-index: 99;
   position: relative;
-  height: 100px;
+  height: 120px;
   /* position: fixed; */
   display: flex;
   width: 100%;
-  /* background-color: #3daaec; */
+  background-color: #000;
   top: 0px;
   justify-content: space-around;
   align-items: center;
   /* border: 2px solid black; */
 }
 .logoHolder {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   cursor: pointer;
   width: 130px;
   height: 80px;
@@ -42,15 +42,14 @@
   list-style: none;
 }
 .navigationHolder li {
-  font-weight: bold;
   cursor: pointer;
   transition: 0.5s;
-  color: #393a3c;
-  font-size: 20px;
+  color: #f8bf4e;
+  font-size: 18px;
 }
-.navigationHolder li:hover {
-  color: #ffff0a;
-}
+/* .navigationHolder li:hover {
+  color: #f8bf4e;
+} */
 .burger {
   display: none;
 }

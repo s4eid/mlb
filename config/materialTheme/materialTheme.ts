@@ -11,9 +11,9 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#3DAAEC",
-      dark: "#2e33eb",
-      light: "#2d69eb",
+      main: "#353535",
+      // dark: "#2e33eb",
+      // light: "#2d69eb",
     },
     therd: {
       main: "#fff",
@@ -21,9 +21,9 @@ const theme = createTheme({
       // light: "#2d69eb",
     },
     secondary: {
-      main: "#111111",
-      light: "#666666",
-      dark: "#383838",
+      main: "#F8BF4E",
+      // light: "#666666",
+      // dark: "#383838",
     },
     error: {
       main: red.A400,

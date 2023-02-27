@@ -3,6 +3,7 @@ import sideBar from "./sidebar.module.css";
 // import Link from "next/link";
 import * as Scroll from "react-scroll";
 import Image from "next/image";
+import CloseIcon from "@mui/icons-material/Close";
 interface Props {
   isOpen: boolean;
   navItems: Array<any>;
@@ -16,7 +17,13 @@ export default function SideBar({ navItems, isOpen, setOpen }: Props) {
   return (
     <div className={isOpen ? sideBar.container : sideBar.containerClose}>
       <div className={sideBar.closeIcon}>
-        <Image
+        <CloseIcon
+          onClick={() => {
+            setOpen(!isOpen);
+          }}
+          fontSize="large"
+        />
+        {/* <Image
           onClick={() => {
             setOpen(!isOpen);
           }}
@@ -24,7 +31,7 @@ export default function SideBar({ navItems, isOpen, setOpen }: Props) {
           width={35}
           height={35}
           alt="burger"
-        />
+        /> */}
       </div>
       <ul className={sideBar.menuItems}>
         {/* {navItems.map((n) => ( */}

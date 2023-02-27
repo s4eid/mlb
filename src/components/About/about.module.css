@@ -28,7 +28,7 @@
   text-align: center;
 }
 .infoHolder h1 {
-  color: #3daaec;
+  color: #000;
 }
 .infoHolder p {
   word-spacing: 3px;
@@ -44,7 +44,7 @@
   height: 700px;
   border-radius: 50%;
   left: -200px;
-  background-color: #ffff0a;
+  background-color: #000;
   z-index: 1;
 }
 

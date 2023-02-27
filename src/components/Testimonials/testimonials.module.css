@@ -18,7 +18,7 @@
 }
 .galleryContainer {
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  background-image: url("/teBg_1.svg");
+  background-image: url("/download.svg");
   background-size: cover;
   background-position: bottom;
   display: flex;
