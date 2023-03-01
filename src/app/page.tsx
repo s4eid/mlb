@@ -32,7 +32,7 @@ export default function Home() {
         <Contact />
         <a
           // target="_blank"
-          href="https://api.whatsapp.com/send?phone=00610410700727&text="
+          href="https://api.whatsapp.com/send?phone=610410700727&text="
           className={styles.whatsappbutton}
         >
           <WhatsAppIcon fontSize="large" />
