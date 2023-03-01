@@ -11,6 +11,7 @@ import Contact from "@/components/Contact/Contact";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Questions from "@/components/Questions/Questions";
 import Footer from "../components/Footer/Footer";
+import Models from "@/components/Models/Models";
 
 // const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["100", "400", "900"] });
@@ -25,12 +26,13 @@ export default function Home() {
         </div>
         <About />
         <Clietns />
+        <Models />
         <Testimonials />
         <Questions />
         <Contact />
         <a
           // target="_blank"
-          href="https://api.whatsapp.com/send?phone=05411214030&text="
+          href="https://api.whatsapp.com/send?phone=00610410700727&text="
           className={styles.whatsappbutton}
         >
           <WhatsAppIcon fontSize="large" />
