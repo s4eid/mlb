@@ -12,9 +12,11 @@ const Header = () => {
       <div className={header.infoContainer}>
         <h1>MLB Flooring In Au</h1>
         <h2>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer.
+          MLB FLOORING is a supply and install Direct Facility offering high
+          quality flooring products and services. In MLB FLORRING family we
+          proudly serve our state-wide customers Our team offers the product
+          knowledge to make your residential or commercial flooring project a
+          success.
         </h2>
         <div className={header.infoBtnContainer}>
           <Button color="secondary" variant="contained">

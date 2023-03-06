@@ -11,13 +11,14 @@ function About() {
       <div className={about.infoHolder}>
         <h1>Our Story</h1>
         <p>
-          Rivera’s Floor Covering is a family business that has grown
-          exponentially serving the Los Angeles area since 1995. We began
-          selling materials, supplies and tools to people within the trade, over
-          the years developing strong relationships with installers, contractors
-          and other retail outlets. As our business progressed we began to sell
-          Carpet, Hardwood Floors, Laminates, Linoleum, and Tile. Our large
-          selection means no waiting. Same day installation is no problem for
+          The journey of MLB FLOORING started about two years ago with the aim
+          of providing and serving customers with the best quality. and also
+          with the daily efforts of a professional and experienced team in this
+          industry. The biggest and most valuable part is the unrelenting
+          efforts of the professional and experienced team for the development
+          of this business, which should not be overlooked. Last, and The
+          highest goal of this team is to get the pure satisfaction of
+          customers, and we will not spare any effort to get it.
         </p>
       </div>
     </div>
