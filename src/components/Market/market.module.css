@@ -1,0 +1,24 @@
+.mainC {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: column;
+  /* width: 100%; */
+}
+.titleC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.titleC h3 {
+  width: 60%;
+}
+.buttonHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

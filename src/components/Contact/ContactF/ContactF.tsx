@@ -18,7 +18,7 @@ function ContactF() {
   return (
     <div className={contactF.mainContainer}>
       <div className={contactF.title}>
-        <h1>Contact With Us</h1>
+        <h1>Get In Touch</h1>
       </div>
       <div className={contactF.container}>
         <Formik

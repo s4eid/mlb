@@ -23,7 +23,7 @@ function MyMap() {
           lat: 38.71124148614522,
           lng: 34.834870182649674,
         }}
-        zoom={11}
+        zoom={9}
       />
     </Wrapper>
     // </div>

@@ -77,21 +77,21 @@ const Slide = ({ person, direction, page, paginate }: Props) => {
           <Image src={person.img} fill alt="slider-images" />
         </div>
         <h3>{person.tx}</h3>
-        <p>{person.txx}</p>
+        {/* <p>{person.txx}</p> */}
       </div>
       <div className={slide.holder}>
         <div className={slide.imageC}>
           <Image src={person.img_1} fill alt="slider-images" />
         </div>
         <h3>{person.tx_1}</h3>
-        <p>{person.txx_1}</p>
+        {/* <p>{person.txx_1}</p> */}
       </div>
       <div className={slide.holder}>
         <div className={slide.imageC}>
           <Image src={person.img_2} fill alt="slider-images" />
         </div>
         <h3>{person.tx_2}</h3>
-        <p>{person.txx_2}</p>
+        {/* <p>{person.txx_2}</p> */}
       </div>
     </motion.div>
   );

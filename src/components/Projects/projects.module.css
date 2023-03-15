@@ -1,0 +1,218 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  margin-top: 60px;
+}
+.main h1 {
+  color: #243b5b;
+}
+.mainC {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.holder {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+}
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+.mainHolder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  position: relative;
+  width: 700px;
+  gap: 30px;
+  height: 700px;
+  background: #fff;
+  border-radius: 75px;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+.mainHolderL {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+  gap: 30px;
+  height: 400px;
+  background: #fff;
+  border-radius: 75px;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+.mainHolderL img {
+  border-radius: 10px;
+  opacity: 80%;
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.mainHolder h2 {
+  /* position: absolute; */
+  /* color: ; */
+  /* bottom: 100px; */
+  letter-spacing: 3px;
+}
+.mainHolder img {
+  border-radius: 10px;
+  opacity: 80%;
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.mainHolder:hover::before,
+.mainHolder:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: #dd9933;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+.mainHolderL:hover::before,
+.mainHolderL:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #dd9933;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+.mainHolder:hover:after {
+  background: #c1c1c1;
+  animation: 2s counterclockwise infinite;
+}
+.mainHolderL:hover:after {
+  background: #c1c1c1;
+  animation: 2s counterclockwise infinite;
+}
+
+.holder img {
+  border-radius: 10px;
+}
+.inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .mainC {
+    flex-direction: column;
+  }
+  .main h1 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainHolder img {
+    width: 300px;
+    height: 230px;
+  }
+  .mainC {
+    gap: 0px;
+  }
+  .inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .main h1 {
+    font-size: 25px;
+  }
+}

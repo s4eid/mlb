@@ -13,7 +13,7 @@
   /* position: fixed; */
   display: flex;
   width: 100%;
-  background-color: #000;
+  /* background-color: #000; */
   top: 0px;
   justify-content: space-around;
   align-items: center;
@@ -21,10 +21,19 @@
 }
 .logoHolder {
   /* margin-top: 20px; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 20px; */
   cursor: pointer;
-  width: 130px;
+  /* width: 130px; */
+  color: #000;
   height: 80px;
   /* object-fit: contain; */
+  position: relative;
+  cursor: pointer;
+  height: 80px;
   position: relative;
 }
 .logoHolder img {
@@ -44,7 +53,7 @@
 .navigationHolder li {
   cursor: pointer;
   transition: 0.5s;
-  color: #f8bf4e;
+  color: #000;
   font-size: 18px;
 }
 /* .navigationHolder li:hover {

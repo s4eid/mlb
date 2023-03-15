@@ -1,15 +1,23 @@
 .holder {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 100px;
-  margin-top: 100px;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  z-index: 100;
+  /* background-image: url("/wave.svg"); */
+  /* background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; */
+  height: 600px;
   /* height: 500px; */
 }
 .infoContainer {
   z-index: 2;
-  width: 500px;
+  width: 90%;
   /* width: 50%; */
+  padding-top: 100px;
   gap: 30px;
   display: flex;
   justify-content: space-around;
@@ -20,7 +28,7 @@
   word-spacing: 5px;
 }
 .infoContainer h2 {
-  color: #393a3c;
+  color: #000000;
 }
 .heroContainer {
   position: relative;
@@ -60,6 +68,37 @@
   font-weight: bold;
   font-size: 16px;
   height: 40px;
+}
+.holderI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+.holderIconC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  flex-direction: column;
+}
+.iconC:hover {
+  background-color: #fff;
+}
+.iconC {
+  width: 100px;
+  transition: 0.3s;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* flex-direction: column; */
+  text-align: center;
+  background-color: #000000;
+  border-radius: 50px;
 }
 @media screen and (max-width: 1300px) {
   .holder {

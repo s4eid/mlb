@@ -7,10 +7,12 @@ import SideBar from "./Sidebar/Sidebar";
 import { navSItems } from "data/nav";
 import * as Scroll from "react-scroll";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Button } from "@mui/material";
+import Link from "next/link";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState<boolean>(false);
-  let Link = Scroll.Link;
+  let Linkk = Scroll.Link;
   // useEffect(() => {
   //   setNavOpen(false);
   // }, [Scroll]);
@@ -18,74 +20,80 @@ function Nav() {
     <div className={nav.mainContainer}>
       <div className={nav.logoHolder}>
         <Link
-          to="home"
-          href="#"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
+          // to=""
+          href="/"
+          // spy={true}
+          // smooth={true}
+          // offset={50}
+          // duration={500}
         >
-          <Image src={"/logo.jpeg"} alt="logo" fill />
+          MLB FLOORING
+          {/* <Image src={"/logo.jpeg"} alt="logo" fill /> */}
         </Link>
       </div>
       <div className={nav.navigation}>
         <ul className={nav.navigationHolder}>
           <li>
             <Link
-              to="home"
-              href="#"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+              legacyBehavior
+              // to="home"
+              href="/"
+              // spy={true}
+              // smooth={true}
+              // offset={50}
+              // duration={500}
             >
               <a>Home</a>
             </Link>
           </li>
           <li>
             <Link
-              to="about"
-              href="#about"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+              legacyBehavior
+              // to="about"
+              href="/about"
+              // spy={true}
+              // smooth={true}
+              // offset={50}
+              // duration={500}
             >
               <a>About</a>
             </Link>
           </li>
           <li>
             <Link
-              to="testimonials"
-              href="#testimonials"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+              // to="testimonials"
+              legacyBehavior
+              href="/projects"
+              // spy={true}
+              // smooth={true}
+              // offset={50}
+              // duration={500}
             >
-              <a>Testimonials</a>
+              <a>Projects</a>
             </Link>
           </li>
           <li>
             <Link
-              to="team"
-              href="#team"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+              legacyBehavior
+              // to="team"
+              href="/team"
+              // spy={true}
+              // smooth={true}
+              // offset={50}
+              // duration={500}
             >
               <a>Team</a>
             </Link>
           </li>
           <li>
             <Link
-              to="contact"
-              href="#contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+              legacyBehavior
+              // to="contact"
+              href="/contact"
+              // spy={true}
+              // smooth={true}
+              // offset={50}
+              // duration={500}
             >
               <a>Contact</a>
             </Link>
@@ -110,6 +118,9 @@ function Nav() {
           /> */}
         </div>
         <SideBar setOpen={setNavOpen} navItems={navSItems} isOpen={navOpen} />
+      </div>
+      <div>
+        <Button variant="contained">Free Quote</Button>
       </div>
     </div>
   );

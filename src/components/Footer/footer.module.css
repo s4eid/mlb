@@ -2,8 +2,68 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
-  background-color: #000;
+  /* height: 100px; */
+  background-color: #000000;
+  flex-direction: column;
+  position: relative;
   color: #f8bf4e;
-  margin-top: 40px;
+  padding: 40px;
+  height: 320px;
+  /* margin-top: 40px; */
+  gap: 20px;
+}
+.linksContainer {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.innerC {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.copyC {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.linksAndC {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.holderI {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.addressC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.addressHolder {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 300px;
+}
+.iconHolder {
+  display: flex;
+  width: 300px;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.mapC {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  position: absolute;
+  top: 10px;
 }

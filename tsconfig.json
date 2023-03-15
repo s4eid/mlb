@@ -30,7 +30,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/Contact/Map/Map.jsx",
-    "src/components/Contact/Contact.tsx"
+    "src/components/Contact/ContactC.tsx"
   ],
   "exclude": ["node_modules"]
 }

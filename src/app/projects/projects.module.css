@@ -1,0 +1,50 @@
+.mainC {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 90px;
+  gap: 60px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.headerHolder {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.titleC {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+.titleC h4 {
+  width: 500px;
+  text-align: center;
+  color: #c1c1c1;
+}
+.iconHolder {
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #c1c1c1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.imageC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  width: 50%;
+}
+.imageC img {
+  object-fit: cover;
+  opacity: 80%;
+}

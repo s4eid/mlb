@@ -1,35 +1,58 @@
 "use client";
-import Image from "next/image";
-import { Inter, Roboto } from "@next/font/google";
+// import { Roboto, Montserrat } from "@next/font/google";
 import styles from "./page.module.css";
+import Market from "../components/Market/Market";
 import Header from "@/components/Header/Header";
-import Nav from "@/components/Nav/Nav";
-import About from "@/components/About/About";
-import Clietns from "@/components/Team/Team";
-import Testimonials from "@/components/Testimonials/Testimonials";
-import Contact from "@/components/Contact/Contact";
+import Projects from "../components/Projects/Projects";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Questions from "@/components/Questions/Questions";
-import Footer from "../components/Footer/Footer";
-import Models from "@/components/Models/Models";
+import NavHome from "@/components/NavHome/Nav";
+import { Button } from "@mui/material";
 
-// const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({ subsets: ["latin"], weight: ["100", "400", "900"] });
+// const roboto = Roboto({ subsets: ["latin"], weight: ["100", "400", "900"] });
+// const font = Montserrat({ subsets: ["latin"], weight: ["100", "400"] });
 
 export default function Home() {
   return (
-    <div className={roboto.className}>
+    <>
+      {/* <div className={font.className}> */}
       <main className={styles.main}>
         <div className={styles.topS}>
-          <Nav />
-          <Header />
+          <div className={styles.videoContainer}>
+            <video className={styles.videoHolder} loop muted autoPlay>
+              <source src="/header-back-video.mp4" />
+            </video>
+            <div className={styles.videoOver}></div>
+          </div>
+          <NavHome />
+          <div className={styles.titleHolder}>
+            <h1>See The Difference With MLB Flooring</h1>
+            <p>MLB FLOORING is a supply and install Direct Facility offering</p>
+            <div className={styles.buttonHolder}>
+              <Button variant="outlined" color="primary">
+                Hybrid
+              </Button>
+              <Button variant="outlined" color="secondary">
+                Laminate
+              </Button>
+              <Button variant="outlined" color="secondary">
+                Carpet
+              </Button>
+              <Button variant="outlined" color="primary">
+                Carpet Tiles
+              </Button>
+            </div>
+          </div>
         </div>
-        <About />
-        <Clietns />
-        <Models />
-        <Testimonials />
+        <Header />
+        <Projects />
+        <Market />
+        {/* <About /> */}
+        {/* <Clietns /> */}
+        {/* <Models /> */}
+        {/* <Testimonials /> */}
         <Questions />
-        <Contact />
+        {/* <Contact /> */}
         <a
           // target="_blank"
           href="https://api.whatsapp.com/send?phone=610410700727&text="
@@ -37,8 +60,8 @@ export default function Home() {
         >
           <WhatsAppIcon fontSize="large" />
         </a>
-        <Footer />
       </main>
-    </div>
+      {/* </div> */}
+    </>
   );
 }

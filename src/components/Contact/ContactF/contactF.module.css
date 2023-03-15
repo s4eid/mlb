@@ -12,7 +12,7 @@
 .container {
   /* width: 100%; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border: 7px solid #f8bf4e;
+  border: 1px solid #000;
   padding: 20px;
   border-radius: 10px;
   background-color: #ffffff;
@@ -27,7 +27,7 @@
   justify-content: space-around;
   align-items: center;
   font-weight: 700;
-  /* color: colors.$secondary_dark; */
+  color: #ffffff;
   margin-bottom: 40px;
 }
 .title h1 {
