@@ -1,0 +1,59 @@
+.mainC {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 100px;
+  gap: 100px;
+  margin-top: 90px;
+}
+.titleC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.titleC h4 {
+  width: 500px;
+  text-align: center;
+  color: #c1c1c1;
+}
+.iconHolder {
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #c1c1c1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.holderC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.holder img {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.holder {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+.holder:hover img {
+  opacity: 70%;
+}
+.suppliersC {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}

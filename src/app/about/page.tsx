@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Image from "next/image";
 import React from "react";
 import about from "./about.module.css";
+import Link from "next/link";
 
 function About() {
   return (
@@ -30,9 +31,12 @@ function About() {
               products and our services with a satisfaction guarantee,
               protecting you and your investment for years to come.
             </h4>
-            <Button variant="contained" color="primary">
-              Contact Us
-            </Button>
+
+            <Link href={"/contact"}>
+              <Button variant="contained" color="primary">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
         <div className={about.containerS}>
@@ -52,9 +56,11 @@ function About() {
               service: Our flooring experts have decades of experience helping
               customers find the perfect flooring for their needs. Skilled
             </h4>
-            <Button variant="outlined" color="secondary">
-              Contact Us
-            </Button>
+            <Link href={"/contact"}>
+              <Button variant="outlined" color="secondary">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
