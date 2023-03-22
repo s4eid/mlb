@@ -54,7 +54,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className={footer.mapC}>{/* <Map /> */}</div>
+      <div className={footer.mapC}>
+        <Map />
+      </div>
     </div>
   );
 }

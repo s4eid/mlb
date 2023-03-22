@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import Market from "../components/Market/Market";
 import Header from "@/components/Header/Header";
 import Projects from "../components/Projects/Projects";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
 import Questions from "@/components/Questions/Questions";
 import NavHome from "@/components/NavHome/Nav";
 import { Button } from "@mui/material";
@@ -53,13 +53,6 @@ export default function Home() {
         {/* <Testimonials /> */}
         <Questions />
         {/* <Contact /> */}
-        <a
-          // target="_blank"
-          href="https://api.whatsapp.com/send?phone=610410700727&text="
-          className={styles.whatsappbutton}
-        >
-          <WhatsAppIcon fontSize="large" />
-        </a>
       </main>
       {/* </div> */}
     </>

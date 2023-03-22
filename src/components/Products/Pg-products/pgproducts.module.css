@@ -1,0 +1,43 @@
+.mainC {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.titleC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.holder {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+}
+.innerH {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  flex-direction: column;
+  width: 25%;
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+.innerH img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.innerH h4 {
+  /* background-color: gray; */
+  padding: 10px;
+}
+
+.innerH:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
