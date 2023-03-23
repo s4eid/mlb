@@ -2,6 +2,7 @@ import React from "react";
 import pg from "./pgproducts.module.css";
 import { pgSamples } from "data/pgSamples";
 import Image from "next/image";
+import Link from "next/link";
 
 function Pgproducts() {
   return (
@@ -10,15 +11,21 @@ function Pgproducts() {
         <h2>Products</h2>
       </div>
       <div className={pg.holder}>
-        {pgSamples.map((p) => (
-          <div className={pg.innerH}>
-            <Image
-              src={`/${p.img_1}`}
-              alt="sample-image"
-              width={300}
-              height={300}
-            />
-            <h4>{p.name}</h4>
+        {pgSamples.map((p, index) => (
+          <div key={index} className={pg.innerH}>
+            <Link
+              href={`products/penguin-hybrid/${p.name
+                .replace(/\s/g, "")
+                .toLowerCase()}`}
+            >
+              <Image
+                src={`/${p.img_1}`}
+                alt="sample-image"
+                width={300}
+                height={300}
+              />
+              <h4>{p.name}</h4>
+            </Link>
           </div>
         ))}
       </div>
