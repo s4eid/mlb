@@ -140,6 +140,14 @@
   /* position: absolute; */
   /* color: ; */
   /* bottom: 100px; */
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.mainHolderL h2 {
+  /* position: absolute; */
+  /* color: ; */
+  /* bottom: 100px; */
+  font-size: 20px;
   letter-spacing: 3px;
 }
 .mainHolder img {
@@ -194,11 +202,17 @@
   .mainC {
     flex-direction: column;
   }
-  .main h1 {
-    font-size: 27px;
+  .mainHolder h2 {
+    font-size: 20px;
+  }
+  .mainHolderL h2 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 700px) {
+  .mainHolder {
+    height: 400px;
+  }
   .mainHolder img {
     width: 300px;
     height: 230px;
@@ -212,7 +226,10 @@
   }
 }
 @media screen and (max-width: 530px) {
-  .main h1 {
-    font-size: 25px;
+  .mainHolder h2 {
+    font-size: 18px;
+  }
+  .mainHolderL h2 {
+    font-size: 18px;
   }
 }

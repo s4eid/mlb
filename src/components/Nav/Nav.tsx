@@ -101,7 +101,7 @@ function Nav() {
         </ul>
         <div className={nav.burger}>
           <MenuIcon
-            color="secondary"
+            color="primary"
             fontSize="large"
             onClick={() => {
               setNavOpen(!navOpen);

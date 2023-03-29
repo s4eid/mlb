@@ -5,12 +5,13 @@
   flex-direction: column;
   gap: 50px;
   width: 100%;
+  margin-bottom: 100px;
   z-index: 100;
   /* background-image: url("/wave.svg"); */
   /* background-repeat: no-repeat;
   background-position: top;
   background-size: cover; */
-  height: 600px;
+  /* height: 600px; */
   /* height: 500px; */
 }
 .infoContainer {
@@ -26,8 +27,10 @@
 }
 .infoContainer h1 {
   word-spacing: 5px;
+  font-size: 25px;
 }
 .infoContainer h2 {
+  font-size: 20px;
   color: #000000;
 }
 .heroContainer {
@@ -110,10 +113,15 @@
     height: 350px;
   }
   .infoContainer h1 {
-    font-size: 27px;
+    font-size: 25px;
   }
   .infoContainer h2 {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .holderI {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 530px) {

@@ -67,3 +67,46 @@
   flex-direction: column;
   width: 500px;
 }
+@media screen and (max-width: 1450px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 0px;
+    padding-bottom: 40px;
+  }
+  .details {
+    gap: 20px;
+  }
+  .imageHolder {
+    position: relative;
+    left: 0px;
+  }
+  .containerS {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 0px;
+    padding-bottom: 40px;
+  }
+
+  .imageHolderS {
+    position: relative;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .imageHolder img {
+    width: 300px;
+    height: 300px;
+  }
+  .imageHolderS img {
+    width: 300px;
+    height: 300px;
+  }
+  .details {
+    width: 80%;
+  }
+}

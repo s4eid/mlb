@@ -39,6 +39,9 @@ function Footer() {
           />
         </div>
       </div>
+      <div className={footer.mapC}>
+        <Map />
+      </div>
       <div className={footer.holderI}>
         <div className={footer.copyC}>
           <p>©2023 Mlb Flooring Australia All Rights Reserved</p>
@@ -54,7 +57,6 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className={footer.mapC}>{/* <Map /> */}</div>
     </div>
   );
 }

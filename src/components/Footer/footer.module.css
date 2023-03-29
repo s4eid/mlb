@@ -67,3 +67,36 @@
   position: absolute;
   top: 10px;
 }
+@media screen and (max-width: 1400px) {
+  .mainC {
+    flex-direction: column;
+    height: auto;
+  }
+  .iconHolder {
+    justify-content: flex-end;
+  }
+  .mapC {
+    position: relative;
+  }
+}
+@media screen and (max-width: 860px) {
+  .linksAndC {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .iconHolder {
+    justify-content: space-around;
+  }
+  .holderI {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mapC {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

@@ -14,11 +14,32 @@
   width: 100%;
   text-align: center;
 }
+.titleC h1 {
+  font-size: 25px;
+}
 .titleC h3 {
+  font-size: 20px;
   width: 60%;
 }
 .buttonHolder {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1080px) {
+  .mainC {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .titleC h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .titleC h3 {
+    width: 80%;
+  }
 }
