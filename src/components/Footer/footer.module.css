@@ -68,21 +68,24 @@
   top: 10px;
 }
 @media screen and (max-width: 1400px) {
-  .mainC {
-    flex-direction: column;
-    height: auto;
-  }
-  .iconHolder {
-    justify-content: flex-end;
-  }
   .mapC {
     position: relative;
   }
-}
-@media screen and (max-width: 860px) {
+  .mainC {
+    /* flex-direction: column; */
+    height: auto;
+    gap: 30px;
+  }
   .linksAndC {
     flex-direction: column-reverse;
     gap: 40px;
+  }
+  .addressC {
+    width: 100%;
+    text-align: left;
+  }
+  .addressHolder {
+    width: 100%;
   }
   .iconHolder {
     justify-content: space-around;
@@ -92,6 +95,33 @@
     gap: 40px;
   }
 }
+/* @media screen and (max-width: 860px) {
+  .mapC {
+    position: relative;
+  }
+  .mainC {
+    flex-direction: column;
+    height: auto;
+  }
+  .linksAndC {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .addressC {
+    width: 100%;
+    text-align: left;
+  }
+  .addressHolder {
+    width: 100%;
+  }
+  .iconHolder {
+    justify-content: space-around;
+  }
+  .holderI {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+} */
 
 @media screen and (max-width: 480px) {
   .mapC {

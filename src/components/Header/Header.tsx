@@ -16,11 +16,11 @@ const Header = () => {
       <div className={header.infoContainer}>
         <h1>MLB Flooring In Au</h1>
         <h2>
-          MLB FLOORING is a supply and install Direct Facility offering high
-          quality flooring products and services. In MLB FLORRING family we
-          proudly serve our state-wide customers Our team offers the product
-          knowledge to make your residential or commercial flooring project a
-          success.
+          MLB FLOORING is a supply and install direct facility offering good
+          quality and fair price flooring products and services. In MLB FLORRING
+          family we proudly serve our state-wide customers Our team offers the
+          product knowledge to make your residential or commercial flooring
+          projects a success.
         </h2>
       </div>
       <div className={header.holderI}>

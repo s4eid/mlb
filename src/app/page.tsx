@@ -26,11 +26,14 @@ export default function Home() {
           </div>
           <NavHome />
           <div className={styles.titleHolder}>
-            <h1>See The Difference With MLB Flooring</h1>
-            <p>MLB FLOORING is a supply and install Direct Facility offering</p>
+            <h1>Feel the difference with MLB Flooring</h1>
+            <p>MLB Flooring is a supply and install direct facility offering</p>
             <div className={styles.buttonHolder}>
               <Button variant="outlined" color="primary">
                 Hybrid
+              </Button>
+              <Button variant="outlined" color="secondary">
+                Timber
               </Button>
               <Button variant="outlined" color="secondary">
                 Laminate
@@ -46,7 +49,7 @@ export default function Home() {
         </div>
         <Header />
         <Projects />
-        <Market />
+        {/* <Market /> */}
         {/* <About /> */}
         {/* <Clietns /> */}
         {/* <Models /> */}
