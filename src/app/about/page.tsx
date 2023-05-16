@@ -9,7 +9,7 @@ function About() {
   return (
     <div className={about.mainContainer}>
       <div className={about.titleC}>
-        <h2>MLB FLOORING AU</h2>
+        <h2>MLB FLOORING</h2>
         <h4>Get To Know Us</h4>
       </div>
       <div className={about.holderC}>
@@ -25,11 +25,11 @@ function About() {
           <div className={about.details}>
             <h2>Satisfying Customers Since 1976</h2>
             <h4>
-              Floors USA has been servicing the Delaware Valley area for over 40
-              years, offering quality flooring products and honest, dependable
-              craftsmanship. We're a family-run business that stands behind our
-              products and our services with a satisfaction guarantee,
-              protecting you and your investment for years to come.
+              MLB Flooring has been servicing its customers across the city of
+              Melbourne, offering quality flooring products and honest,
+              dependable craftsmanship. We're a family-run business that stands
+              behind our products and our services with a satisfaction
+              guarantee, protecting you and your investment for years to come.
             </h4>
 
             <Link href={"/contact"}>
@@ -42,7 +42,7 @@ function About() {
         <div className={about.containerS}>
           <div className={about.imageHolderS}>
             <Image
-              src="/about-1.webp"
+              src="/about-2.jpg"
               alt="about-image"
               width={500}
               height={500}
@@ -52,9 +52,8 @@ function About() {
             <h2>Why Should You Choose Us?</h2>
             <h4>
               Selection: We proudly offer the largest and best selection of
-              flooring under one roof in the entire Delaware Valley! Expert
-              service: Our flooring experts have decades of experience helping
-              customers find the perfect flooring for their needs. Skilled
+              flooring Our flooring experts have decades of experience helping
+              customers find the perfect flooring for their needs.
             </h4>
             <Link href={"/contact"}>
               <Button variant="outlined" color="secondary">
