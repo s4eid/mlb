@@ -52,14 +52,14 @@ function Product() {
           <Button
             onClick={() => setDetail(true)}
             variant={detail ? "contained" : "outlined"}
-            color="therd"
+            // color="therd"
           >
             Features
           </Button>
           <Button
             onClick={() => setDetail(false)}
             variant={!detail ? "contained" : "outlined"}
-            color="therd"
+            // color="therd"
           >
             Technical Data
           </Button>
