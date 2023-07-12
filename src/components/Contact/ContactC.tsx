@@ -12,9 +12,10 @@ function ContactC() {
       <div className={contact.titleC}>
         <h1>Contact Us</h1>
         <h3>
-          We know how improvement projects can get daunting. That is why we are
-          offering free measurements of your space so you can get the most
-          accurate quote and estimate for your project.
+          We'd love to hear from you! If you have any questions about our
+          services or would like to schedule a consultation, please don't
+          hesitate to get in touch. You can reach us by phone, email, or by
+          filling out the contact form below.
         </h3>
       </div>
       <div className={contact.contactC}>
@@ -22,17 +23,15 @@ function ContactC() {
         <div className={contact.contactCImage}>
           <div className={contact.holder}>
             <LocalPhoneIcon fontSize="large" color="primary" />
-            <h4>1300 470 585</h4>
+            <h4>0410 700 727</h4>
           </div>
           <div className={contact.holder}>
             <BusinessIcon fontSize="large" color="primary" />
-            <h4>
-              21 Comben Drive, Werribee, Victoria, Melbourne - 3030, Australia
-            </h4>
+            <h4>MLB Flooring PTY LTD 1 Coringa Cl, Vermont VIC 3133</h4>
           </div>
           <div className={contact.holder}>
             <EmailIcon fontSize="large" color="primary" />
-            <h4>info@nationalfloors.com.au</h4>
+            <h4>Info@mlbflooring.com.au</h4>
           </div>
         </div>
       </div>

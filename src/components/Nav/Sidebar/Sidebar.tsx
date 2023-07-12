@@ -1,9 +1,10 @@
 import React from "react";
 import sideBar from "./sidebar.module.css";
 // import Link from "next/link";
-import * as Scroll from "react-scroll";
-import Image from "next/image";
+// import * as Scroll from "react-scroll";
+// import Image from "next/image";
 import CloseIcon from "@mui/icons-material/Close";
+import Link from "next/link";
 interface Props {
   isOpen: boolean;
   navItems: Array<any>;
@@ -13,7 +14,7 @@ export default function SideBar({ navItems, isOpen, setOpen }: Props) {
   if (!isOpen) {
     return null;
   }
-  let Link = Scroll.Link;
+  // let Link = Scroll.Link;
   return (
     <div className={isOpen ? sideBar.container : sideBar.containerClose}>
       <div className={sideBar.closeIcon}>
@@ -35,72 +36,31 @@ export default function SideBar({ navItems, isOpen, setOpen }: Props) {
       </div>
       <ul className={sideBar.menuItems}>
         {/* {navItems.map((n) => ( */}
-        <Link
-          to={"home"}
-          href={"#"}
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          // key={n.id}
-        >
+        <Link href={"/"}>
           <li>
             <a>Home</a>
           </li>
         </Link>
-        <Link
-          to={"about"}
-          href={"#about"}
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          // key={n.id}
-        >
+        <Link href={"/about"}>
           <li>
             <a>About</a>
           </li>
         </Link>
-        <Link
-          to={"team"}
-          href={"#team"}
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          // key={n.id}
-        >
+        <Link href={"/projects"}>
           <li>
-            <a>Team</a>
+            <a>Projects</a>
           </li>
         </Link>
-        <Link
-          to={"testimonials"}
-          href={"#testimonials"}
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          // key={n.id}
-        >
+        <Link href={"/products"}>
           <li>
-            <a>Testemonials</a>
+            <a>Products</a>
           </li>
         </Link>
-        <Link
-          to={"contact"}
-          href={"#contact"}
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          // key={n.id}
-        >
+        <Link href={"/contact"}>
           <li>
             <a>Contact</a>
           </li>
         </Link>
-        {/* // ))} */}
       </ul>
     </div>
   );

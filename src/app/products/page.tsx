@@ -13,11 +13,13 @@ function Products() {
       <div className={products.titleC}>
         <h2>Products</h2>
         <h4>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries,
+          In MLB Flooring ,your go-to destination for high-quality flooring
+          solutions. Whether you're looking for the timeless elegance of
+          hardwood, the affordability and versatility of laminate, the comfort
+          and warmth of carpet tiles, or the durability and easy maintenance of
+          vinyl hybrid, we have the perfect floor to suit your needs. Explore
+          our diverse range of flooring options and discover the ideal solution
+          to transform your living or workspace.
         </h4>
         <div className={products.iconHolder}>
           <Linkk
@@ -34,20 +36,34 @@ function Products() {
       </div>
       <div className={products.holderC} id="products">
         <div className={products.holder}>
-          <Image src="/project-1.jpg" alt="products" width={300} height={300} />
-          <h3>Carpet</h3>
+          <Image
+            src="/project-1.jpeg"
+            alt="products"
+            width={300}
+            height={300}
+          />
+          <h3>Carpet tiles</h3>
         </div>
         <div className={products.holder}>
           <Image src="/project-2.jpg" alt="products" width={300} height={300} />
-          <h3>Product</h3>
+          <h3>vinyl Hybrid</h3>
         </div>
         <div className={products.holder}>
           <Image src="/project-3.jpg" alt="products" width={300} height={300} />
-          <h3>Product</h3>
+          <h3>Laminate</h3>
         </div>
         <div className={products.holder}>
           <Image src="/project-4.jpg" alt="products" width={300} height={300} />
-          <h3>Vinly</h3>
+          <h3>Hardwood</h3>
+        </div>
+        <div className={products.holder}>
+          <Image
+            src="/project--5.jpg"
+            alt="products"
+            width={300}
+            height={300}
+          />
+          <h3>Vinyl Plank</h3>
         </div>
       </div>
       <div className={products.suppliersC}>

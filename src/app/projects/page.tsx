@@ -29,22 +29,22 @@ function Projects() {
       img: "/te_6.jpg",
     },
     {
-      img: "/te_2.jpg",
+      img: "/te_7.jpg",
     },
     {
-      img: "/te_3.jpg",
+      img: "/te_8.jpg",
     },
     {
-      img: "/te_4.jpg",
+      img: "/te_9.jpg",
     },
     {
-      img: "/te_5.jpg",
+      img: "/te_10.jpg",
     },
     {
-      img: "/te_6.jpg",
+      img: "/te_11.jpg",
     },
     {
-      img: "/te_2.jpg",
+      img: "/te_12.jpg",
     },
   ];
 
@@ -55,10 +55,11 @@ function Projects() {
           <h2>Projects</h2>
           {/* <h3>Our Happy Clients</h3> */}
           <h4>
-            default model text, and a search for 'lorem ipsum' will uncover many
-            web sites still in their infancy. Various versions have evolved over
-            the years, sometimes by accident, sometimes on purpose (injected
-            humour and the like).
+            At MLB Flooring, we're proud to have worked on a variety of flooring
+            projects for clients throughout Melbourne and srrounding areas. From
+            custom designs to challenging installations, we're committed to
+            providing top-quality flooring solutions that meet our clients'
+            unique needs.
           </h4>
           <div className={projects.iconHolder}>
             <Linkk

@@ -49,11 +49,11 @@ function Footer() {
         <div className={footer.addressC}>
           <div className={footer.addressHolder}>
             <h3>Address</h3>
-            <p>3/16 Malvern St, Bayswater VIC 3153</p>
+            <p>MLB Flooring PTY LTD 1 Coringa Cl, Vermont VIC 3133</p>
           </div>
           <div className={footer.addressHolder}>
             <h3>Phone</h3>
-            <p>+9055101955</p>
+            <p>0410 700 727</p>
           </div>
         </div>
       </div>
