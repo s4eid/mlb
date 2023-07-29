@@ -1,18 +1,62 @@
 "use client";
 import SliderC from "@/components/Slide/Slide";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@mui/material";
-import Image from "next/image";
 import React from "react";
 import product from "./product.module.css";
+import { usePathname } from "next/navigation";
+import { pgSamples } from "../../../../../data/pgSamples";
 
 function Product() {
-  let img = ["/sample-PG1501-1.jpg", "/sample-PG1502-1.jpg"];
+  const router = usePathname();
+  const [loading, setLoading] = useState(true);
+  const [currentP, setCurrentP] = useState({
+    name: "",
+    img_1: "",
+    img_2: "",
+    length_size: "",
+    water_resistant: "",
+    profile: "",
+    thickness: "",
+    pattern: "",
+    type: "",
+    edging: "",
+    width: "",
+    length: "",
+    features: "",
+  });
+  console.log(router?.split("/")[3]);
+  let productId = router?.split("/")[3];
+  useEffect(() => {
+    pgSamples.map((s) => {
+      let _name = s.name.replace(/\s/g, "").toLowerCase();
+      if (_name == productId) {
+        setLoading(false);
+        setCurrentP({
+          name: s.name,
+          edging: s.edging,
+          width: s.width,
+          water_resistant: s.water_resistant,
+          img_1: s.img_1,
+          img_2: s.img_2,
+          length: s.length,
+          pattern: s.pattern,
+          type: s.type,
+          length_size: s.length_size,
+          profile: s.profile,
+          thickness: s.thickness,
+          features: s.features,
+        });
+        console.log("yeeeess we find it !!!");
+      }
+    });
+  }, []);
+  let img = [`/${currentP.img_1}`, `/${currentP.img_2}`];
   const [detail, setDetail] = useState(true);
   return (
     <div className={product.mainC}>
       <div className={product.title}>
-        <h2>LX09/ Champagne</h2>
+        <h2>{currentP.name}</h2>
       </div>
       <div className={product.container}>
         <div className={product.imageHolder}>
@@ -20,29 +64,20 @@ function Product() {
         </div>
         <div className={product.infoHolder}>
           <div className={product.holder}>
-            <p>
-              Floortex Classic laminated range is an adventure into exciting
-              floor covers. With classical and gorgeous design, it is more than
-              just a laminated floor. The designer colours create an
-              unforgettable piece in any interior design and are sure to impress
-              any visitors. With advanced scratch guard technology, the flooring
-              easily withstands the rigors of daily living. Designer colours and
-              smart technology combines to create the perfect balance between
-              style and a natural atmosphere.
-            </p>
+            <p>The Next Generation in High Performance Flooring.</p>
           </div>
           <div className={product.info}>
             <div className={product.infoH}>
               <h4>Code & Name:</h4>
-              <p>LX09/ Champagne</p>
+              <p>{currentP.name}</p>
             </div>
             <div className={product.infoH}>
               <h4>Length Size:</h4>
-              <p>1220 (L) x165 (W) x12 (T)mm</p>
+              <p>{currentP.length_size}</p>
             </div>
             <div className={product.infoH}>
-              <h4>Finish:</h4>
-              <p>High Gloss</p>
+              <h4>Water Resistant:</h4>
+              <p>{currentP.water_resistant}</p>
             </div>
           </div>
         </div>
@@ -66,54 +101,44 @@ function Product() {
         </div>
         <div className={product.detailC}>
           {detail ? (
-            <p>
-              10 times more scratch resistant Designed to create a gloss surface
-              with a natural variance between the planks. Easy installation
-              using the Drop Lock system Superior technical performance
-              Environmentally sound with PEFC and EPD certification Micro bevel
-              edge
-            </p>
+            <p>{currentP.features}</p>
           ) : (
             <div className={product.info}>
               <div className={product.infoH}>
                 <h4>Code & Name:</h4>
-                <p>LX09/ Champagne</p>
+                <p>{currentP.name}</p>
               </div>
               <div className={product.infoH}>
                 <h4>Length Size:</h4>
-                <p>1220 (L) x165 (W) x12 (T)mm</p>
-              </div>
-              <div className={product.infoH}>
-                <h4>Finish:</h4>
-                <p>High Gloss</p>
+                <p>{currentP.length_size}</p>
               </div>
               <div className={product.infoH}>
                 <h4>Thickness:</h4>
-                <p>18mm</p>
+                <p>{currentP.thickness}</p>
               </div>
               <div className={product.infoH}>
-                <h4>Width Option:</h4>
-                <p>130mm / 127mm / 92mm / 85mm / 75mm</p>
+                <h4>Edging:</h4>
+                <p>{currentP.edging}</p>
               </div>
               <div className={product.infoH}>
-                <h4>Boards Per Pack:</h4>
-                <p>6 or 8 Pcs</p>
+                <h4>Pattern:</h4>
+                <p>{currentP.pattern}</p>
               </div>
               <div className={product.infoH}>
-                <h4>Surface:</h4>
-                <p>Smooth</p>
+                <h4>Type:</h4>
+                <p>{currentP.type}</p>
               </div>
               <div className={product.infoH}>
-                <h4>Pack Size:</h4>
-                <p>2.42m2 / 1.872m2</p>
+                <h4>Length:</h4>
+                <p>{currentP.length}</p>
               </div>
               <div className={product.infoH}>
-                <h4>Application/Use for Residential:</h4>
-                <p>Houses, Units</p>
+                <h4>With:</h4>
+                <p>{currentP.width}</p>
               </div>
               <div className={product.infoH}>
-                <h4>Application/Use for Commercial:</h4>
-                <p>Office Building, Internal Walkway</p>
+                <h4>Profile:</h4>
+                <p>{currentP.profile}</p>
               </div>
             </div>
           )}
