@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import projects from "./projects.module.css";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -8,28 +9,30 @@ const Projects = () => {
       {/* <h1>Lets see how its look</h1> */}
       <div className={projects.mainC}>
         <div className={projects.mainHolder}>
-          <Image src={"/project-4.jpg"} width={600} height={480} />
-          <h2>Vinly</h2>
+          <Link href={"/products/penguin-hybrid"}>
+            <Image src={"/project-2.jpg"} width={600} height={480} />
+            <h3>Hybrid</h3>
+          </Link>
         </div>
         <div className={projects.holder}>
           <div className={projects.inner}>
             <div className={projects.mainHolderL}>
-              <Image src={"/project-2.jpg"} width={300} height={230} />
-              <h2>Hybrid</h2>
+              <Image src={"/timber.jpg"} width={300} height={230} />
+              <h3>Timber</h3>
             </div>
             <div className={projects.mainHolderL}>
-              <Image src={"/project-3.jpg"} width={300} height={230} />
-              <h2>Carpet Tiles</h2>
+              <Image src={"/carpet-tiles.jpeg"} width={300} height={230} />
+              <h3>Carpet Tiles</h3>
             </div>
           </div>
           <div className={projects.inner}>
             <div className={projects.mainHolderL}>
-              <Image src={"/project-1.jpg"} width={300} height={230} />
-              <h2>Carpet</h2>
+              <Image src={"/carpet.jpg"} width={300} height={230} />
+              <h3>Carpet</h3>
             </div>
             <div className={projects.mainHolderL}>
               <Image src={"/project-5.jpg"} width={300} height={230} />
-              <h2>Laminate</h2>
+              <h3>Laminate</h3>
             </div>
           </div>
         </div>

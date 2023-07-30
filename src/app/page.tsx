@@ -8,6 +8,7 @@ import Projects from "../components/Projects/Projects";
 import Questions from "@/components/Questions/Questions";
 import NavHome from "@/components/NavHome/Nav";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 // const roboto = Roboto({ subsets: ["latin"], weight: ["100", "400", "900"] });
 // const font = Montserrat({ subsets: ["latin"], weight: ["100", "400"] });
@@ -29,9 +30,11 @@ export default function Home() {
             <h1>Feel the difference with MLB Flooring</h1>
             <p>MLB Flooring is a supply and install direct facility offering</p>
             <div className={styles.buttonHolder}>
-              <Button variant="outlined" color="primary">
-                Hybrid
-              </Button>
+              <Link href={"/products/penguin-hybrid"}>
+                <Button variant="outlined" color="primary">
+                  Hybrid
+                </Button>
+              </Link>
               <Button variant="outlined" color="secondary">
                 Timber
               </Button>

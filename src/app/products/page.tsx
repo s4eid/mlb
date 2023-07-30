@@ -5,6 +5,7 @@ import Suppliers from "../../components/Products/Suppliers";
 import products from "./products.module.css";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import * as Scroll from "react-scroll";
+import Link from "next/link";
 
 function Products() {
   let Linkk = Scroll.Link;
@@ -35,35 +36,32 @@ function Products() {
         </div>
       </div>
       <div className={products.holderC} id="products">
+        <Link href={"/products/penguin-hybrid"}>
+          <div className={products.holder}>
+            <Image src="/hybrid.jpg" alt="products" width={210} height={157} />
+            <h4>Hybrid</h4>
+          </div>
+        </Link>
         <div className={products.holder}>
-          <Image
-            src="/project-1.jpeg"
-            alt="products"
-            width={300}
-            height={300}
-          />
-          <h3>Carpet tiles</h3>
+          <Image src="/timber.jpg" alt="products" width={210} height={157} />
+          <h4>Timber</h4>
         </div>
         <div className={products.holder}>
-          <Image src="/project-2.jpg" alt="products" width={300} height={300} />
-          <h3>vinyl Hybrid</h3>
+          <Image src="/project-3.jpg" alt="products" width={210} height={157} />
+          <h4>Laminate</h4>
         </div>
         <div className={products.holder}>
-          <Image src="/project-3.jpg" alt="products" width={300} height={300} />
-          <h3>Laminate</h3>
-        </div>
-        <div className={products.holder}>
-          <Image src="/project-4.jpg" alt="products" width={300} height={300} />
-          <h3>Hardwood</h3>
+          <Image src="/carpet.jpg" alt="products" width={210} height={157} />
+          <h4>Carpet</h4>
         </div>
         <div className={products.holder}>
           <Image
-            src="/project--5.jpg"
+            src="/carpet-tiles.jpeg"
             alt="products"
-            width={300}
-            height={300}
+            width={210}
+            height={157}
           />
-          <h3>Vinyl Plank</h3>
+          <h4>Carpet tiles</h4>
         </div>
       </div>
       <div className={products.suppliersC}>
