@@ -104,4 +104,7 @@
   .buttonHolder {
     flex-direction: column;
   }
+  .buttonHolder button {
+    width: 100%;
+  }
 }

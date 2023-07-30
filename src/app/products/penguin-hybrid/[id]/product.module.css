@@ -85,6 +85,9 @@
     height: auto;
     gap: 30px;
   }
+  .info {
+    /* width: 100%; */
+  }
   .detailC p {
     width: 80%;
   }
@@ -94,6 +97,9 @@
     width: 90%;
   }
   .infoH {
+    width: 100%;
+  }
+  .info {
     width: 100%;
   }
   .detailC {
