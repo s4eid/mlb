@@ -1,5 +1,5 @@
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 import suppliers from "./suppliers.module.css";
 import { suppliersImages } from "../../../data/suppliers";
 export default function Suppliers() {
@@ -9,8 +9,8 @@ export default function Suppliers() {
         <div className={suppliers.sliderTrack}>
           {suppliersImages.map((t, index) => (
             <div className={suppliers.slide} key={index}>
-              <p>{t}</p>
-              {/* <Image src={t} width={100} height={100} /> */}
+              {/* <p>{t}</p> */}
+              <Image src={t} width={100} height={100} />
             </div>
           ))}
         </div>

@@ -42,10 +42,13 @@ function Products() {
             <h4>Hybrid</h4>
           </div>
         </Link>
-        <div className={products.holder}>
-          <Image src="/timber.jpg" alt="products" width={210} height={157} />
-          <h4>Timber</h4>
-        </div>
+
+        <Link href={"/products/fusion"}>
+          <div className={products.holder}>
+            <Image src="/timber.jpg" alt="products" width={210} height={157} />
+            <h4>Timber</h4>
+          </div>
+        </Link>
         <div className={products.holder}>
           <Image src="/project-3.jpg" alt="products" width={210} height={157} />
           <h4>Laminate</h4>

@@ -1,25 +1,25 @@
 import React from "react";
-import pg from "./pgproducts.module.css";
-import { pgSamples } from "data/samples/pgSamples";
+import fu from "./fuproducts.module.css";
+import { fuSamples } from "data/samples/fusionSample";
 import Image from "next/image";
 import Link from "next/link";
 
-function Pgproducts() {
+function Fuproducts() {
   return (
-    <div className={pg.mainC}>
-      <div className={pg.titleC}>
+    <div className={fu.mainC}>
+      <div className={fu.titleC}>
         <h2>Products</h2>
       </div>
-      <div className={pg.holder}>
-        {pgSamples.map((p, index) => (
-          <div key={index} className={pg.innerH}>
+      <div className={fu.holder}>
+        {fuSamples.map((p, index) => (
+          <div key={index} className={fu.innerH}>
             <Link
-              href={`products/penguin-hybrid/${p.name
+              href={`products/fusion/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >
               <Image
-                src={`/Samples/Penguin/${p.img_1}`}
+                src={`/Samples/Fusion/${p.img_1}`}
                 alt="sample-image"
                 width={300}
                 height={300}
@@ -33,4 +33,4 @@ function Pgproducts() {
   );
 }
 
-export default Pgproducts;
+export default Fuproducts;

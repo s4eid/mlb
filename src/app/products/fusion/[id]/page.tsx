@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import product from "./product.module.css";
 import { usePathname } from "next/navigation";
-import { pgSamples } from "../../../../../data/samples/pgSamples";
+import { fuSamples } from "../../../../../data/samples/fusionSample";
 
 function Product() {
   const router = usePathname();
@@ -16,44 +16,46 @@ function Product() {
     img_2: "",
     length_size: "",
     water_resistant: "",
-    profile: "",
-    thickness: "",
+    // profile: "",
+    // thickness: "",
     pattern: "",
-    type: "",
-    edging: "",
+    // type: "",
+    // edging: "",
     width: "",
     length: "",
     features: "",
   });
   console.log(router?.split("/")[3]);
   let productId = router?.split("/")[3];
+  console.log(productId);
   useEffect(() => {
-    pgSamples.map((s) => {
+    fuSamples.map((s) => {
       let _name = s.name.replace(/\s/g, "").toLowerCase();
+      console.log(name);
       if (_name == productId) {
         setLoading(false);
         setCurrentP({
           name: s.name,
-          edging: s.edging,
+          // edging: s.edging,
           width: s.width,
           water_resistant: s.water_resistant,
           img_1: s.img_1,
           img_2: s.img_2,
           length: s.length,
           pattern: s.pattern,
-          type: s.type,
+          // type: s.type,
           length_size: s.length_size,
-          profile: s.profile,
-          thickness: s.thickness,
+          // thickness: s.thickness,
           features: s.features,
+          // profile: s.profile,
         });
         console.log("yeeeess we find it !!!");
       }
     });
   }, []);
   let img = [
-    `/Samples/Penguin/${currentP.img_1}`,
-    `/Samples/Penguin/${currentP.img_2}`,
+    `/Samples/Fusion/${currentP.img_1}`,
+    `/Samples/Fusion/${currentP.img_2}`,
   ];
   const [detail, setDetail] = useState(true);
   return (
@@ -115,22 +117,22 @@ function Product() {
                 <h4>Length Size:</h4>
                 <p>{currentP.length_size}</p>
               </div>
-              <div className={product.infoH}>
+              {/* <div className={product.infoH}>
                 <h4>Thickness:</h4>
                 <p>{currentP.thickness}</p>
-              </div>
-              <div className={product.infoH}>
+              </div> */}
+              {/* <div className={product.infoH}>
                 <h4>Edging:</h4>
                 <p>{currentP.edging}</p>
-              </div>
+              </div> */}
               <div className={product.infoH}>
                 <h4>Pattern:</h4>
                 <p>{currentP.pattern}</p>
               </div>
-              <div className={product.infoH}>
+              {/* <div className={product.infoH}>
                 <h4>Type:</h4>
                 <p>{currentP.type}</p>
-              </div>
+              </div> */}
               <div className={product.infoH}>
                 <h4>Length:</h4>
                 <p>{currentP.length}</p>
@@ -139,10 +141,10 @@ function Product() {
                 <h4>With:</h4>
                 <p>{currentP.width}</p>
               </div>
-              <div className={product.infoH}>
+              {/* <div className={product.infoH}>
                 <h4>Profile:</h4>
                 <p>{currentP.profile}</p>
-              </div>
+              </div> */}
             </div>
           )}
         </div>
