@@ -35,9 +35,12 @@ export default function Home() {
                   Hybrid
                 </Button>
               </Link>
-              <Button variant="outlined" color="secondary">
-                Timber
-              </Button>
+
+              <Link href={"/products/fusion"}>
+                <Button variant="outlined" color="secondary">
+                  Timber
+                </Button>
+              </Link>
               <Button variant="outlined" color="secondary">
                 Laminate
               </Button>
