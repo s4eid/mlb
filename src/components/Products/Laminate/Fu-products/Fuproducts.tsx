@@ -1,6 +1,6 @@
 import React from "react";
 import fu from "./fuproducts.module.css";
-import { fuSamples } from "data/samples/fusionSample";
+import { fuSamples } from "data/samples/laminate/fusionSample";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ function Fuproducts() {
         {fuSamples.map((p, index) => (
           <div key={index} className={fu.innerH}>
             <Link
-              href={`products/fusion/${p.name
+              href={`products/laminate/fusion/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

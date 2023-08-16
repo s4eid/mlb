@@ -1,6 +1,6 @@
 import React from "react";
 import pg from "./pgproducts.module.css";
-import { pgSamples } from "data/samples/pgSamples";
+import { pgSamples } from "data/samples/hybrid/pgSamples";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ function Pgproducts() {
         {pgSamples.map((p, index) => (
           <div key={index} className={pg.innerH}>
             <Link
-              href={`products/penguin-hybrid/${p.name
+              href={`products/hybrid/penguin-hybrid/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

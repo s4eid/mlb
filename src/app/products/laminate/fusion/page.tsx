@@ -1,4 +1,4 @@
-import Fuproduct from "@/components/Products/Fu-products/Fuproducts";
+import Fuproduct from "@/components/Products/Laminate/Fu-products/Fuproducts";
 import Image from "next/image";
 import React from "react";
 import fusion from "./fusion.module.css";

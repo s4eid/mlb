@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import product from "./product.module.css";
 import { usePathname } from "next/navigation";
-import { pgSamples } from "../../../../../data/samples/pgSamples";
+import { pgSamples } from "../../../../../../data/samples/hybrid/pgSamples";
 
 function Product() {
   const router = usePathname();
@@ -25,8 +25,7 @@ function Product() {
     length: "",
     features: "",
   });
-  console.log(router?.split("/")[3]);
-  let productId = router?.split("/")[3];
+  let productId = router?.split("/")[4];
   useEffect(() => {
     pgSamples.map((s) => {
       let _name = s.name.replace(/\s/g, "").toLowerCase();

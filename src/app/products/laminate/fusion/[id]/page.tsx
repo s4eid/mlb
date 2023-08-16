@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import product from "./product.module.css";
 import { usePathname } from "next/navigation";
-import { fuSamples } from "../../../../../data/samples/fusionSample";
+import { fuSamples } from "../../../../../../data/samples/laminate/fusionSample";
 
 function Product() {
   const router = usePathname();
@@ -25,9 +25,7 @@ function Product() {
     length: "",
     features: "",
   });
-  console.log(router?.split("/")[3]);
-  let productId = router?.split("/")[3];
-  console.log(productId);
+  let productId = router?.split("/")[4];
   useEffect(() => {
     fuSamples.map((s) => {
       let _name = s.name.replace(/\s/g, "").toLowerCase();

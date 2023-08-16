@@ -1,11 +1,36 @@
-import Pgproducts from "@/components/Products/Pg-products/Pgproducts";
+"use client";
+import Pgproducts from "@/components/Products/Hybrid/Pg-products/Pgproducts";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import penguinH from "./penguin-hybrid.module.css";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import Link from "next/link";
 
 function Page() {
+  const [alignment, setAlignment] = React.useState("penguin");
+
+  const handleChange = (event: any, newAlignment: string) => {
+    setAlignment(newAlignment);
+  };
   return (
     <div className={penguinH.mainC}>
+      <div className={penguinH.mainNav}>
+        <ToggleButtonGroup
+          color="primary"
+          value={alignment}
+          exclusive
+          onChange={handleChange}
+          aria-label="Platform"
+        >
+          <Link href={"/products/hybrid/penguin-hybrid"}>
+            <ToggleButton value="penguin">Penguin Hybrid</ToggleButton>
+          </Link>
+          <Link href={"/products/hybrid/pinaco"}>
+            <ToggleButton value="pinaco">Pinaco Hybrid</ToggleButton>
+          </Link>
+        </ToggleButtonGroup>
+      </div>
       <div className={penguinH.infoC}>
         <div className={penguinH.container}>
           <div className={penguinH.sliderWrapper}>

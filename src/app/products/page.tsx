@@ -36,23 +36,27 @@ function Products() {
         </div>
       </div>
       <div className={products.holderC} id="products">
-        <Link href={"/products/penguin-hybrid"}>
+        <Link href={"/products/hybrid/penguin-hybrid"}>
           <div className={products.holder}>
             <Image src="/hybrid.jpg" alt="products" width={210} height={157} />
             <h4>Hybrid</h4>
           </div>
         </Link>
-
-        <Link href={"/products/fusion"}>
+        <div className={products.holder}>
+          <Image src="/timber.jpg" alt="products" width={210} height={157} />
+          <h4>Timber</h4>
+        </div>
+        <Link href={"/products/laminate/fusion"}>
           <div className={products.holder}>
-            <Image src="/timber.jpg" alt="products" width={210} height={157} />
-            <h4>Timber</h4>
+            <Image
+              src="/project-3.jpg"
+              alt="products"
+              width={210}
+              height={157}
+            />
+            <h4>Laminate</h4>
           </div>
         </Link>
-        <div className={products.holder}>
-          <Image src="/project-3.jpg" alt="products" width={210} height={157} />
-          <h4>Laminate</h4>
-        </div>
         <div className={products.holder}>
           <Image src="/carpet.jpg" alt="products" width={210} height={157} />
           <h4>Carpet</h4>
