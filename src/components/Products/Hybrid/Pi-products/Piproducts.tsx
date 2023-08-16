@@ -19,7 +19,7 @@ function Piproducts() {
                 .toLowerCase()}`}
             >
               <Image
-                src={`/Samples/pinaco/${p.img_1}`}
+                src={`/Samples/Pinaco/${p.img_1}`}
                 alt="sample-image"
                 width={300}
                 height={300}
