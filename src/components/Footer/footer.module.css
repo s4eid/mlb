@@ -8,11 +8,12 @@
   position: relative;
   color: #f8bf4e;
   padding: 40px;
-  height: 320px;
+  height: 360px;
   /* margin-top: 40px; */
   gap: 20px;
 }
 .linksContainer {
+  margin-top: 30px;
   display: flex;
   gap: 50px;
   justify-content: center;
@@ -20,8 +21,9 @@
   color: #fff;
 }
 .innerC {
+  height: 170px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }

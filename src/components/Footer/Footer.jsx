@@ -4,6 +4,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Map from "../Contact/Map/Map";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -12,13 +13,34 @@ function Footer() {
         <div className={footer.linksContainer}>
           <div className={footer.innerC}>
             <h2>Company</h2>
-            <p>About</p>
-            <p>Contact</p>
+            <Link href={"/about"}>
+              <p>About</p>
+            </Link>
+
+            <Link href={"/contact"}>
+              <p>Contact</p>
+            </Link>
           </div>
           <div className={footer.innerC}>
             <h2>Products</h2>
-            <p>Laminate</p>
-            <p>Carpet</p>
+
+            <Link href={"/products/laminate/fusion"}>
+              <p>Laminate</p>
+            </Link>
+
+            <Link href={"/products/hybrid/penguin-hybrid"}>
+              <p>Hybrid</p>
+            </Link>
+
+            <Link href={"/products/timber"}>
+              <p>Timber</p>
+            </Link>
+
+            <Link href={"/products/carpet"}>
+              <p>Carpet</p>
+            </Link>
+
+            <Link href={"/products/carpet_tile"}>Carpet Tile</Link>
           </div>
         </div>
         <div className={footer.iconHolder}>

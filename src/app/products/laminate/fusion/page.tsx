@@ -1,11 +1,44 @@
+"use client";
 import Fuproduct from "@/components/Products/Laminate/Fu-products/Fuproducts";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import fusion from "./fusion.module.css";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import Link from "next/link";
 
 function Page() {
+  const [alignment, setAlignment] = useState("fusion");
+  const handleChange = (event: any, newAlignment: string) => {
+    setAlignment(newAlignment);
+  };
   return (
     <div className={fusion.mainC}>
+      <div className={fusion.mainNav}>
+        <ToggleButtonGroup
+          color="primary"
+          value={alignment}
+          exclusive
+          onChange={handleChange}
+          aria-label="Platform"
+        >
+          <Link href={"/products/laminate/fusion"}>
+            <ToggleButton value="penguin">Fusion</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/pinaco"}>
+            <ToggleButton value="pinaco">Pinaco Delication</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/pinaco_2"}>
+            <ToggleButton value="pinaco">Pinaco Selection</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/australian_sp"}>
+            <ToggleButton value="pinaco">Australian Species</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/arborlok"}>
+            <ToggleButton value="pinaco">Arborlok</ToggleButton>
+          </Link>
+        </ToggleButtonGroup>
+      </div>
       <div className={fusion.infoC}>
         <div className={fusion.container}>
           <div className={fusion.sliderWrapper}>

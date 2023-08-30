@@ -1,11 +1,44 @@
+"use client";
 import ArProducts from "@/components/Products/Laminate/arborlok-products/ArProducts";
 // import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import arborlok from "./arborlok.module.css";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import Link from "next/link";
 
 function Page() {
+  const [alignment, setAlignment] = useState("arborlok");
+  const handleChange = (event: any, newAlignment: string) => {
+    setAlignment(newAlignment);
+  };
   return (
     <div className={arborlok.mainC}>
+      <div className={arborlok.mainNav}>
+        <ToggleButtonGroup
+          color="primary"
+          value={alignment}
+          exclusive
+          onChange={handleChange}
+          aria-label="Platform"
+        >
+          <Link href={"/products/laminate/fusion"}>
+            <ToggleButton value="penguin">Fusion</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/pinaco"}>
+            <ToggleButton value="pinaco">Pinaco Delication</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/pinaco_2"}>
+            <ToggleButton value="pinaco">Pinaco Selection</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/australian_sp"}>
+            <ToggleButton value="pinaco">Australian Species</ToggleButton>
+          </Link>
+          <Link href={"/products/laminate/arborlok"}>
+            <ToggleButton value="pinaco">Arborlok</ToggleButton>
+          </Link>
+        </ToggleButtonGroup>
+      </div>
       <div className={arborlok.infoC}>
         <div className={arborlok.container}>
           <div className={arborlok.sliderWrapper}>
