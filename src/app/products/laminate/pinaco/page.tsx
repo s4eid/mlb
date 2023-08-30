@@ -15,6 +15,7 @@ function Page() {
     <div className={pinaco.mainC}>
       <div className={pinaco.mainNav}>
         <ToggleButtonGroup
+          className={pinaco.nav}
           color="primary"
           value={alignment}
           exclusive
@@ -22,19 +23,29 @@ function Page() {
           aria-label="Platform"
         >
           <Link href={"/products/laminate/fusion"}>
-            <ToggleButton value="penguin">Fusion</ToggleButton>
+            <ToggleButton className={pinaco.linkHolder} value="penguin">
+              Fusion
+            </ToggleButton>
           </Link>
           <Link href={"/products/laminate/pinaco"}>
-            <ToggleButton value="pinaco">Pinaco Delication</ToggleButton>
+            <ToggleButton className={pinaco.linkHolder} value="pinaco">
+              Pinaco Delication
+            </ToggleButton>
           </Link>
           <Link href={"/products/laminate/pinaco_2"}>
-            <ToggleButton value="pinaco">Pinaco Selection</ToggleButton>
+            <ToggleButton className={pinaco.linkHolder} value="pinaco">
+              Pinaco Selection
+            </ToggleButton>
           </Link>
           <Link href={"/products/laminate/australian_sp"}>
-            <ToggleButton value="pinaco">Australian Species</ToggleButton>
+            <ToggleButton className={pinaco.linkHolder} value="pinaco">
+              Australian Species
+            </ToggleButton>
           </Link>
           <Link href={"/products/laminate/arborlok"}>
-            <ToggleButton value="pinaco">Arborlok</ToggleButton>
+            <ToggleButton className={pinaco.linkHolder} value="pinaco">
+              Arborlok
+            </ToggleButton>
           </Link>
         </ToggleButtonGroup>
       </div>
