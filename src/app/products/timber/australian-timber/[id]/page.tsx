@@ -22,7 +22,7 @@ function Product() {
     // type: "",
     // edging: "",
     width: "",
-    length: "",
+    // length: "",
     features: "",
   });
   let productId = router?.split("/")[4];
@@ -39,7 +39,7 @@ function Product() {
           // water_resistant: s.water_resistant,
           img_1: s.img_1,
           img_2: s.img_2,
-          length: s.length,
+          // length: s.length,
           // pattern: s.pattern,
           // type: s.type,
           length_size: s.length_size,
@@ -132,10 +132,10 @@ function Product() {
                 <h4>Type:</h4>
                 <p>{currentP.type}</p>
               </div> */}
-              <div className={product.infoH}>
+              {/* <div className={product.infoH}>
                 <h4>Length:</h4>
                 <p>{currentP.length}</p>
-              </div>
+              </div> */}
               <div className={product.infoH}>
                 <h4>With:</h4>
                 <p>{currentP.width}</p>
