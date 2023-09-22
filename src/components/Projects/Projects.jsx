@@ -17,8 +17,10 @@ const Projects = () => {
         <div className={projects.holder}>
           <div className={projects.inner}>
             <div className={projects.mainHolderL}>
-              <Image src={"/timber.jpg"} width={300} height={230} />
-              <h3>Timber</h3>
+              <Link href={"/products/timber/australian-timber"}>
+                <Image src={"/timber.jpg"} width={300} height={230} />
+                <h3>Timber</h3>
+              </Link>
             </div>
             <div className={projects.mainHolderL}>
               <Image src={"/carpet-tiles.jpeg"} width={300} height={230} />
