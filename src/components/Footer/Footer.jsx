@@ -44,21 +44,29 @@ function Footer() {
           </div>
         </div>
         <div className={footer.iconHolder}>
-          <InstagramIcon
+          <Link href={"https://www.instagram.com/mlb__flooring/"}>
+            <InstagramIcon
+              sx={{ cursor: "pointer" }}
+              color="therd"
+              fontSize="large"
+            />
+          </Link>
+          {/* <TelegramIcon
             sx={{ cursor: "pointer" }}
             color="therd"
             fontSize="large"
-          />
-          <TelegramIcon
-            sx={{ cursor: "pointer" }}
-            color="therd"
-            fontSize="large"
-          />
-          <WhatsAppIcon
-            sx={{ cursor: "pointer" }}
-            color="therd"
-            fontSize="large"
-          />
+          /> */}
+          <a
+            // target="_blank"
+            href="https://api.whatsapp.com/send?phone=610410700727&text="
+            // className={.whatsappbutton}
+          >
+            <WhatsAppIcon
+              sx={{ cursor: "pointer" }}
+              color="therd"
+              fontSize="large"
+            />
+          </a>
         </div>
       </div>
       <div className={footer.mapC}>
