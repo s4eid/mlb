@@ -24,8 +24,13 @@ function Page() {
           aria-label="Platform"
         >
           <Link href={"/products/carpet/refined"}>
-            <ToggleButton className={sixth.linkHolder} value="penguin">
+            <ToggleButton className={sixth.linkHolder} value="refined">
               Refined Appeal
+            </ToggleButton>
+          </Link>
+          <Link href={"/products/carpet/sixth"}>
+            <ToggleButton className={sixth.linkHolder} value="sixth">
+              Sixth Avenue
             </ToggleButton>
           </Link>
         </ToggleButtonGroup>

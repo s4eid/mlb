@@ -60,19 +60,12 @@ function Products() {
             <h4>Laminate</h4>
           </div>
         </Link>
-        <div className={products.holder}>
-          <Image src="/carpet.jpg" alt="products" width={210} height={157} />
-          <h4>Carpet</h4>
-        </div>
-        <div className={products.holder}>
-          <Image
-            src="/carpet-tiles.jpeg"
-            alt="products"
-            width={210}
-            height={157}
-          />
-          <h4>Carpet tiles</h4>
-        </div>
+        <Link href={"/products/carpet/refined"}>
+          <div className={products.holder}>
+            <Image src="/carpet.jpg" alt="products" width={210} height={157} />
+            <h4>Carpet</h4>
+          </div>
+        </Link>
       </div>
       <div className={products.suppliersC}>
         <div className={products.suppliersT}>

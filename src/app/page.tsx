@@ -1,7 +1,7 @@
 "use client";
 // import { Roboto, Montserrat } from "@next/font/google";
 import styles from "./page.module.css";
-import Market from "../components/Market/Market";
+// import Market from "../components/Market/Market";
 import Header from "@/components/Header/Header";
 import Projects from "../components/Projects/Projects";
 
@@ -45,12 +45,12 @@ export default function Home() {
                   Laminate
                 </Button>
               </Link>
-              <Button variant="outlined" color="secondary">
-                Carpet
-              </Button>
-              <Button variant="outlined" color="primary">
-                Carpet Tiles
-              </Button>
+
+              <Link href={"/products/carpet/refined"}>
+                <Button variant="outlined" color="secondary">
+                  Carpet
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

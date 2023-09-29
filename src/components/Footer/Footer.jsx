@@ -32,15 +32,13 @@ function Footer() {
               <p>Hybrid</p>
             </Link>
 
-            <Link href={"/products/timber"}>
+            <Link href={"/products/timber/australian-timber"}>
               <p>Timber</p>
             </Link>
 
-            <Link href={"/products/carpet"}>
+            <Link href={"/products/carpet/refined"}>
               <p>Carpet</p>
             </Link>
-
-            <Link href={"/products/carpet_tile"}>Carpet Tile</Link>
           </div>
         </div>
         <div className={footer.iconHolder}>

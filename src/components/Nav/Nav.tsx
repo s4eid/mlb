@@ -120,7 +120,9 @@ function Nav() {
         <SideBar setOpen={setNavOpen} navItems={navSItems} isOpen={navOpen} />
       </div>
       <div>
-        <Button variant="contained">Free Quote</Button>
+        <Link href={"/contact"}>
+          <Button variant="contained">Free Quote</Button>
+        </Link>
       </div>
     </div>
   );
