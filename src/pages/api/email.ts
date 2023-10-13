@@ -29,6 +29,7 @@ export default async function handler(
       method: "POST",
     }
   );
+
   const data = await response.json();
   if (!data.success) {
     return res.status(405).send({ status: "somthing went wrong..." });
