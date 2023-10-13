@@ -5,7 +5,7 @@ import { Formik, Field, Form } from "formik";
 import ReCAPTCHA from "react-google-recaptcha";
 import LoadingButton from "@mui/lab/LoadingButton";
 import TextField from "@mui/material/TextField";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import {
   initialValues,
   contactSchema,
@@ -13,8 +13,8 @@ import {
 
 function ContactF() {
   const reRef = useRef<ReCAPTCHA | any>(null);
-  let loading = false;
-  // const router = useRouter();
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
   return (
     <div className={contactF.mainContainer}>
       <div className={contactF.title}>
@@ -25,26 +25,28 @@ function ContactF() {
           initialValues={initialValues}
           validationSchema={contactSchema}
           onSubmit={async (data) => {
-            console.log(data);
-            // await fetch("/api/email", {
-            //   method: "POST",
-            //   headers: {
-            //     "Content-Type": "application/json",
-            //   },
-            //   body: JSON.stringify(data),
-            // });
-            // const token = await reRef.current.executeAsync();
-            // reRef.current.reset();
+            setLoading(true);
+            const token = await reRef.current.executeAsync();
+            reRef.current.reset();
+            await fetch("/api/email", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ data, token }),
+            });
+            setLoading(false);
+            router.push("/");
           }}
         >
           {({ errors, touched, isValid, dirty }) => (
             <Form className={contactF.fields}>
-              {/* <ReCAPTCHA
+              <ReCAPTCHA
                 sitekey={`${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
                 size="invisible"
                 ref={reRef}
                 className={contactF.reCaptcha}
-              /> */}
+              />
 
               <div className={contactF.inputsContainer}>
                 <div className={contactF.holder}>
