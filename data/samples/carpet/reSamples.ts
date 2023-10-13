@@ -21,8 +21,8 @@ export const reSamples = [
   {
     name: "Colour Quartz 505",
     id: "COLOUR-QUARTZ-505",
-    img_1: "sample-QUARTZ-1.jpg",
-    img_2: "sample-QUARTZ-2.jpg",
+    img_1: "sample-Quartz-1.jpg",
+    img_2: "sample-Quartz-2.jpg",
     Fibre_Type: "Soft Solution Dyed Nylon",
     Fibre_Weight: "45oz",
     width: "3.66m",
@@ -40,8 +40,8 @@ export const reSamples = [
   {
     name: "Colour Sand 510",
     id: "COLOUR-SAND-510",
-    img_1: "sample-SAND-1.jpg",
-    img_2: "sample-SAND-2.jpg",
+    img_1: "sample-Sand-1.jpg",
+    img_2: "sample-Sand-2.jpg",
     Fibre_Type: "Soft Solution Dyed Nylon",
     Fibre_Weight: "45oz",
     width: "3.66m",
@@ -59,8 +59,8 @@ export const reSamples = [
   {
     name: "Colour Soft Taupe 550",
     id: "COLOUR-SOFT-TAUPE-550",
-    img_1: "sample-SOFT-1.jpg",
-    img_2: "sample-SOFT-2.jpg",
+    img_1: "sample-Soft-1.jpg",
+    img_2: "sample-Soft-2.jpg",
     Fibre_Type: "Soft Solution Dyed Nylon",
     Fibre_Weight: "45oz",
     width: "3.66m",
