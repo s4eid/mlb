@@ -12,7 +12,7 @@ function ContactC() {
       <div className={contact.titleC}>
         <h1>Contact Us</h1>
         <h3>
-          We'd love to hear from you! If you have any questions about our
+          We'd love to hear from you!If you have any questions about our
           services or would like to schedule a consultation, please don't
           hesitate to get in touch. You can reach us by phone, email, or by
           filling out the contact form below.
