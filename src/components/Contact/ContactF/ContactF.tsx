@@ -36,7 +36,7 @@ function ContactF() {
               body: JSON.stringify({ data, token }),
             });
             setLoading(false);
-            // router.push("/");
+            router.push("/");
           }}
         >
           {({ errors, touched, isValid, dirty }) => (
