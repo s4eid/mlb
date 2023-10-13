@@ -40,8 +40,8 @@ export const reSamples = [
   {
     name: "Colour Sand 510",
     id: "COLOUR-SAND-510",
-    img_1: "sample-Sand-1.jpg",
-    img_2: "sample-Sand-2.jpg",
+    img_1: "sample-SAND-1.jpg",
+    img_2: "sample-SAND-2.jpg",
     Fibre_Type: "Soft Solution Dyed Nylon",
     Fibre_Weight: "45oz",
     width: "3.66m",
