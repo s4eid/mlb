@@ -34,7 +34,7 @@ export default async function handler(
     return res.status(405).send({ status: "somthing went wrong..." });
   }
   const message = {
-    to: ["saeid.savage@gmail.com", "saeid@step-agent.com"],
+    to: ["saeid@step-agent.com", "sinakamali@icloud.com"],
     from: {
       email: "saeid.noormohammad@gmail.com",
       name: "saeid noormohammad",
