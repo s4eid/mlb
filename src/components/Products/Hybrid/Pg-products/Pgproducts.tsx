@@ -14,7 +14,7 @@ function Pgproducts() {
         {pgSamples.map((p, index) => (
           <div key={index} className={pg.innerH}>
             <Link
-              href={`products/hybrid/penguin-hybrid/${p.name
+              href={`products/hybrid/pigyt/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

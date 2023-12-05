@@ -14,7 +14,7 @@ function ReProduct() {
         {reSamples.map((p, index) => (
           <div key={index} className={re.innerH}>
             <Link
-              href={`products/carpet/refined/${p.name
+              href={`products/carpet/syfined/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

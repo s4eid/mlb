@@ -14,7 +14,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG152302 Coastal Blackbutt",
@@ -30,7 +30,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG159203 Eureka",
@@ -46,7 +46,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
 
   {
@@ -63,7 +63,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
 
   {
@@ -80,7 +80,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG156206 Lake Sevan",
@@ -96,7 +96,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG158207 Blanco",
@@ -112,7 +112,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
 
   {
@@ -129,7 +129,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
 
   {
@@ -146,7 +146,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG151010 Geneva",
@@ -162,7 +162,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1540mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG189901 Spotted Gum",
@@ -178,7 +178,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG184502 Blackbutt",
@@ -194,7 +194,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG184503 Baltic",
@@ -210,7 +210,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG186404 Vannee",
@@ -226,7 +226,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG189405 Biscay",
@@ -242,7 +242,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG187706 Olympus",
@@ -258,7 +258,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG188207 Baikal",
@@ -274,7 +274,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG186708 Prespa",
@@ -290,7 +290,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG180009 Niaka",
@@ -306,7 +306,7 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
   {
     name: "PG183810 Rekko",
@@ -322,6 +322,6 @@ export const pgSamples = [
     width: "230mm",
     length: "1860mm",
     features:
-      "Penguin Hybrid flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
+      "Pigyt flooring mainly structured with the UV coating, abrasion resistant paper, decorative paper film and core board. IXPE option available for high end usage.",
   },
 ];

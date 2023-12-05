@@ -36,20 +36,20 @@ function Products() {
         </div>
       </div>
       <div className={products.holderC} id="products">
-        <Link href={"/products/hybrid/penguin-hybrid"}>
+        <Link href={"/products/hybrid/pigyt"}>
           <div className={products.holder}>
             <Image src="/hybrid.jpg" alt="products" width={210} height={157} />
             <h4>Hybrid</h4>
           </div>
         </Link>
 
-        <Link href={"/products/timber/australian-timber"}>
+        <Link href={"/products/timber/aus-timber"}>
           <div className={products.holder}>
             <Image src="/timber.jpg" alt="products" width={210} height={157} />
             <h4>Timber</h4>
           </div>
         </Link>
-        <Link href={"/products/laminate/fusion"}>
+        <Link href={"/products/laminate/fisiyon"}>
           <div className={products.holder}>
             <Image
               src="/project-3.jpg"
@@ -60,19 +60,19 @@ function Products() {
             <h4>Laminate</h4>
           </div>
         </Link>
-        <Link href={"/products/carpet/refined"}>
+        <Link href={"/products/carpet/syfined"}>
           <div className={products.holder}>
             <Image src="/carpet.jpg" alt="products" width={210} height={157} />
             <h4>Carpet</h4>
           </div>
         </Link>
       </div>
-      <div className={products.suppliersC}>
+      {/* <div className={products.suppliersC}>
         <div className={products.suppliersT}>
           <h2>Our Suppliers</h2>
         </div>
         <Suppliers />
-      </div>
+      </div> */}
     </div>
   );
 }

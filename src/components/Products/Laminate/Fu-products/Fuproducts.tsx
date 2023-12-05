@@ -14,7 +14,7 @@ function Fuproducts() {
         {fuSamples.map((p, index) => (
           <div key={index} className={fu.innerH}>
             <Link
-              href={`products/laminate/fusion/${p.name
+              href={`products/laminate/fisiyon/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

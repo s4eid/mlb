@@ -14,7 +14,7 @@ function Piproducts() {
         {piSamples.map((p, index) => (
           <div key={index} className={pi.innerH}>
             <Link
-              href={`products/hybrid/pinaco/${p.name
+              href={`products/hybrid/pisaco/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

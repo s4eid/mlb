@@ -14,7 +14,7 @@ function Auproducts() {
         {australians_samples.map((p, index) => (
           <div key={index} className={au.innerH}>
             <Link
-              href={`products/laminate/australian_sp/${p.name
+              href={`products/laminate/australia_ap/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

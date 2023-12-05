@@ -14,7 +14,7 @@ function SiProduct() {
         {siSamples.map((p, index) => (
           <div key={index} className={si.innerH}>
             <Link
-              href={`products/carpet/sixth/${p.name
+              href={`products/carpet/sixur/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

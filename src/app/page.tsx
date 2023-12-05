@@ -30,23 +30,23 @@ export default function Home() {
             <h1>Feel the difference with MLB Flooring</h1>
             <p>MLB Flooring is a supply and install direct facility offering</p>
             <div className={styles.buttonHolder}>
-              <Link href={"/products/hybrid/penguin-hybrid"}>
+              <Link href={"/products/hybrid/pigyt"}>
                 <Button variant="outlined" color="primary">
                   Hybrid
                 </Button>
               </Link>
-              <Link href={"/products/timber/australian-timber"}>
+              <Link href={"/products/timber/aus-timber"}>
                 <Button variant="outlined" color="secondary">
                   Timber
                 </Button>
               </Link>
-              <Link href={"/products/laminate/fusion"}>
+              <Link href={"/products/laminate/fisiyon"}>
                 <Button variant="outlined" color="secondary">
                   Laminate
                 </Button>
               </Link>
 
-              <Link href={"/products/carpet/refined"}>
+              <Link href={"/products/carpet/syfined"}>
                 <Button variant="outlined" color="secondary">
                   Carpet
                 </Button>

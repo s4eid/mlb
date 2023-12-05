@@ -14,7 +14,7 @@ function Arproducts() {
         {arborlok_samples.map((p, index) => (
           <div key={index} className={ar.innerH}>
             <Link
-              href={`products/laminate/arborlok/${p.name
+              href={`products/laminate/arolomok/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >

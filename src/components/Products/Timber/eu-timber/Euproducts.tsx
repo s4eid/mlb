@@ -14,7 +14,7 @@ function Euproducts() {
         {euSamples.map((p, index) => (
           <div key={index} className={eu.innerH}>
             <Link
-              href={`products/timber/european-oak/${p.name
+              href={`products/timber/eu-aok/${p.name
                 .replace(/\s/g, "")
                 .toLowerCase()}`}
             >
