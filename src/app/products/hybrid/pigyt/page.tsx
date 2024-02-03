@@ -26,8 +26,15 @@ function Page() {
           <Link href={"/products/hybrid/pigyt"}>
             <ToggleButton value="pigyt">Pigyt</ToggleButton>
           </Link>
+
           <Link href={"/products/hybrid/pisaco"}>
             <ToggleButton value="pisaco">Pisaco</ToggleButton>
+          </Link>
+          <Link href={"/products/hybrid/classic"}>
+            <ToggleButton value="classic">Classic</ToggleButton>
+          </Link>
+          <Link href={"/products/hybrid/herringbone"}>
+            <ToggleButton value="classic">Herringbone</ToggleButton>
           </Link>
         </ToggleButtonGroup>
       </div>

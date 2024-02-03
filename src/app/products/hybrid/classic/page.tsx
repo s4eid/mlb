@@ -1,20 +1,20 @@
 "use client";
-import Piproducts from "@/components/Products/Hybrid/Pi-products/Piproducts";
+import Clproduct from "@/components/Products/Hybrid/Cl-products/Clproducts";
 import React from "react";
-import penguinH from "./penguin-hybrid.module.css";
+import classic from "./classic-hybrid.module.css";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Link from "next/link";
 
 function Page() {
-  const [alignment, setAlignment] = React.useState("pinaco");
+  const [alignment, setAlignment] = React.useState("classic");
 
   const handleChange = (event: any, newAlignment: string) => {
     setAlignment(newAlignment);
   };
   return (
-    <div className={penguinH.mainC}>
-      <div className={penguinH.mainNav}>
+    <div className={classic.mainC}>
+      <div className={classic.mainNav}>
         <ToggleButtonGroup
           color="primary"
           value={alignment}
@@ -36,37 +36,29 @@ function Page() {
           </Link>
         </ToggleButtonGroup>
       </div>
-      <div className={penguinH.infoC}>
-        <div className={penguinH.container}>
-          <div className={penguinH.sliderWrapper}>
-            <div className={penguinH.slider}>
-              <img id="slide1" src="/pinaco.jpg" alt="supplier-logo" />
-              {/* <img id="slide2" src="/pg-sample2.jpg" alt="supplier-logo" />
-              <img id="slide3" src="/pg-sample3.jpg" alt="supplier-logo" /> */}
+      <div className={classic.infoC}>
+        <div className={classic.container}>
+          <div className={classic.sliderWrapper}>
+            <div className={classic.slider}>
+              <img id="slide1" src="/cl-sample.jpg" alt="supplier-logo" />
             </div>
-            {/* <div className={penguinH.sliderNav}>
+            <div className={classic.sliderNav}>
               <a href="#slide1"></a>
               <a href="#slide2"></a>
               <a href="#slide3"></a>
-            </div> */}
+            </div>
           </div>
         </div>
-        <div className={penguinH.infoH}>
-          {/* <Image
-            src="/pg-supplier.png"
-            width={250}
-            height={70}
-            alt="supplier-logo"
-          /> */}
+        <div className={classic.infoH}>
           <p>
-            Pisaco Selection using latest European joining technology to create
-            an easier and watertight installation, whilst still combining the
-            best of European Oak with a wide range of designer colors, ensuring
-            there is a design for every taste.
+            Classic Hybrid, the epitome of sophistication and practicality in
+            flooring solutions. Crafted with precision and designed to elevate
+            your living spaces, Classic Hybrid seamlessly blends timeless
+            aesthetics with cutting-edge technology.
           </p>
         </div>
       </div>
-      <Piproducts />
+      <Clproduct />
     </div>
   );
 }

@@ -72,7 +72,7 @@ function Footer() {
       </div>
       <div className={footer.holderI}>
         <div className={footer.copyC}>
-          <p>©2023 Mlb Flooring Australia All Rights Reserved</p>
+          <p>©2024 Mlb Flooring Australia All Rights Reserved</p>
         </div>
         <div className={footer.addressC}>
           <div className={footer.addressHolder}>
