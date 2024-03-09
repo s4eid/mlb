@@ -54,6 +54,26 @@
   justify-content: center;
   gap: 10px;
 }
+.commentC {
+  margin-top: 100px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.commentC h1 {
+  font-size: 40px;
+  width: 100%;
+}
+.starBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .whatsappbutton {
   position: fixed;
   bottom: 15px;

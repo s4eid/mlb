@@ -4,10 +4,11 @@ import styles from "./page.module.css";
 // import Market from "../components/Market/Market";
 import Header from "@/components/Header/Header";
 import Projects from "../components/Projects/Projects";
-
+import StarIcon from "@mui/icons-material/Star";
 import Questions from "@/components/Questions/Questions";
 import NavHome from "@/components/NavHome/Nav";
 import { Button } from "@mui/material";
+import GoogleIcon from "@mui/icons-material/Google";
 import Link from "next/link";
 
 // const roboto = Roboto({ subsets: ["latin"], weight: ["100", "400", "900"] });
@@ -61,6 +62,40 @@ export default function Home() {
         {/* <Clietns /> */}
         {/* <Models /> */}
         {/* <Testimonials /> */}
+        <div className={styles.commentC}>
+          <h2>60+ Five Star Reviews On Google</h2>
+          <GoogleIcon
+            sx={{ cursor: "pointer", color: "#000000" }}
+            fontSize="large"
+          />
+          <div className={styles.starBox}>
+            <StarIcon
+              sx={{ cursor: "pointer", color: "#F8B62D" }}
+              fontSize="large"
+            />
+            <StarIcon
+              sx={{ cursor: "pointer", color: "#F8B62D" }}
+              fontSize="large"
+            />
+            <StarIcon
+              sx={{ cursor: "pointer", color: "#F8B62D" }}
+              fontSize="large"
+            />
+            <StarIcon
+              sx={{ cursor: "pointer", color: "#F8B62D" }}
+              fontSize="large"
+            />
+            <StarIcon
+              sx={{ cursor: "pointer", color: "#F8B62D" }}
+              fontSize="large"
+            />
+          </div>
+          <Link href={"https://g.co/kgs/bQ42Gys"}>
+            <Button variant="outlined" color="primary">
+              See Here
+            </Button>
+          </Link>
+        </div>
         <Questions />
         {/* <Contact /> */}
       </main>

@@ -32,10 +32,14 @@
 .holderC {
   display: flex;
   justify-content: space-around;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  width: 100%;
+  gap: 100px;
   flex-wrap: wrap;
+}
+.holderB {
+  width: 100%;
 }
 .holder img {
   object-fit: cover;
@@ -43,13 +47,37 @@
   transition: 0.5s ease-in-out;
 }
 .holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   cursor: pointer;
   position: relative;
+  width: 100%;
   transition: 0.5s ease-in-out;
   text-align: center;
 }
 .holder:hover img {
   opacity: 70%;
+}
+.holder:hover h4 {
+  opacity: 70%;
+  color: #f8b62d;
+}
+.holder:hover p {
+  opacity: 70%;
+}
+.infoC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+.infoC p {
+  transition: 0.5s ease-in-out;
+}
+.infoC h4 {
+  transition: 0.5s ease-in-out;
 }
 .suppliersC {
   display: flex;
@@ -60,6 +88,21 @@
   margin-top: 40px;
 }
 
+@media screen and (max-width: 770px) {
+  .holder {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .infoC {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .holder img {
+    width: 300px;
+    height: 200px;
+  }
+}
 @media screen and (max-width: 550px) {
   .titleC h4 {
     width: 85%;

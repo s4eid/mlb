@@ -1,7 +1,7 @@
 import React from "react";
 import footer from "./footer.module.css";
-import TelegramIcon from "@mui/icons-material/Telegram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Map from "../Contact/Map/Map";
 import Link from "next/link";
@@ -24,19 +24,19 @@ function Footer() {
           <div className={footer.innerC}>
             <h2>Products</h2>
 
-            <Link href={"/products/laminate/fusion"}>
+            <Link href={"/products/laminate/fisiyon"}>
               <p>Laminate</p>
             </Link>
 
-            <Link href={"/products/hybrid/penguin-hybrid"}>
+            <Link href={"/products/hybrid/pigyt"}>
               <p>Hybrid</p>
             </Link>
 
-            <Link href={"/products/timber/australian-timber"}>
+            <Link href={"/products/timber/aus-timber"}>
               <p>Timber</p>
             </Link>
 
-            <Link href={"/products/carpet/refined"}>
+            <Link href={"/products/carpet/syfined"}>
               <p>Carpet</p>
             </Link>
           </div>
@@ -60,6 +60,17 @@ function Footer() {
             // className={.whatsappbutton}
           >
             <WhatsAppIcon
+              sx={{ cursor: "pointer" }}
+              color="therd"
+              fontSize="large"
+            />
+          </a>
+          <a
+            // target="_blank"
+            href="https://www.facebook.com/people/MLB-Flooring/100078899708860"
+            // className={.whatsappbutton}
+          >
+            <FacebookIcon
               sx={{ cursor: "pointer" }}
               color="therd"
               fontSize="large"
